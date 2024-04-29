@@ -1,0 +1,80 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day","Namaste","Namaskar"],
+         "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?","Namaste ","Namaskaar"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure","Happy to help"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+      
+        {"tag": "Reset password",
+         "patterns": ["how to reset my password?", "i want  to change my password",  "incorrect password is showing?" ],
+         "responses": ["You can visit here to reset your password www.demo.com"],
+         "context": [""]
+        },
+        {
+                "tag": "give review to services",
+                "patterns": ["i want to give reviews", "service review "],
+                "responses": ["Sure! www.review.com."],
+                "context": [""]
+         },
+         {"tag": "service status",
+         "patterns": ["in how much time my service will be completed ", "service status",  "latest update of services" ],
+         "responses": ["www.serviceupdates.com"],
+         "context": [""]
+        },
+        {"tag": "general_information",
+         "patterns": ["What services do you offer?", "How does your platform work?", "What areas do you currently serve?" ],
+         "responses": ["We offer a variety of services including plumbing, cleaning, electrician,spas,house painting  etc. Our platform is designed to make booking and managing services easy. We currently serve areas A, B, and C."],
+         "context": [""]
+        },
+        {"tag": "booking_scheduling",
+         "patterns": ["How can I book a service?", "What is the process for scheduling an appointment?", "Can I choose a specific date and time for the service?" ],
+         "responses": ["Booking a service is simple! You can do it through our website or mobile app. The scheduling process involves selecting a service, choosing a date and time, and confirming your booking."],
+         "context": [""]
+        },
+        {"tag": "technician_information",
+         "patterns": ["How experienced are your service providers?" ],
+         "responses": ["Our service providers are highly experienced and skilled. We ensure that they meet the necessary qualifications and have a proven track record in their respective fields."],
+         "context": [""]
+        },
+        {"tag": "cancellation_rescheduling",
+         "patterns": ["Can I cancel or reschedule an appointment?", "Is there a cancellation fee?", "What is your policy for last-minute changes?" ],
+         "responses": ["Yes, you can cancel or reschedule your appointment. We understand that plans can change. There may be a cancellation fee, depending on the timing of the change. Please check our policy for more details."],
+         "context": [""]
+        },
+        {"tag": "feedback_reviews",
+         "patterns": ["How can I provide feedback on the service?", "Can I see reviews from other customers?" ],
+         "responses": ["You can provide feedback through our website or app. We value your opinion! You can also view reviews from other customers to get an idea of the quality of our services."],
+         "context": [""]
+        },
+        {"tag": "safety_security",
+         "patterns": ["How do you ensure the safety of my home?", "Are your service providers background-checked?" ],
+         "responses": ["The safety of your home is our priority. Our service providers undergo thorough background checks and we have safety protocols in place to ensure a secure experience for our customers."],
+         "context": [""]
+        },
+        {"tag": "technical_support",
+         "patterns": ["What should I do if I encounter a technical issue?", "Is there a helpline for technical support?" ],
+         "responses": ["If you encounter a technical issue, please reach out to our technical support helpline at [helpline number]. Our team is ready to assist you and resolve any issues you may face."],
+         "context": [""]
+        },
+        {"tag": "membership_loyalty_programs",
+         "patterns": ["Do you offer any membership or loyalty programs?", "Are there benefits to being a regular customer?" ],
+         "responses": ["Yes, we offer membership and loyalty programs for our regular customers. Enjoy exclusive benefits, discounts, and priority service as a valued member of our community."],
+         "context": [""]
+        }
+    ]
+}

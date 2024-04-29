@@ -1,0 +1,1001 @@
+Weather_condition,Service,Price_change_factor
+Extreme,AC Repair Service,0.13718340839139956
+Fine,Men/kids haircut,-50.61991370457118
+Fine,Hair colour,-63.88001402286481
+Extreme,Water Purifier Repair,18.4328013790041
+Fine,Kitchen cleaning,16.6556491958022
+Moderate,Microwave Repair,4.415284776497536
+Fine,Face care,-4.433159749829555
+Fine,Bathroom cleaning,-19.100439678878317
+Moderate,Pest control,3.207775810740795
+Moderate,Washing Machine Repair,-27.920809202547385
+Extreme,Water Purifier Repair,-18.983356851791637
+Fine,Kitchen cleaning,41.20546578393057
+Extreme,AC Repair Service,10.675750479376454
+Fine,Kitchen cleaning,-25.342292454171517
+Moderate,Chimney Repair,-16.591621012790952
+Extreme,Water Purifier Repair,18.409372249870007
+Fine,Full home cleaning,-4.767618740897391
+Moderate,Carpenter,24.69022423049669
+Extreme,AC Repair Service,-19.572138817152492
+Fine,Hair colour,29.552178738067866
+Fine,Face care,-4.57908897600684
+Fine,Face care,21.193931201118286
+Fine,Hair colour,-2.0411039352889753
+Fine,Men/kids haircut,1.3187648238289975
+Fine,Men/kids haircut,9.311620283826498
+Extreme,AC Repair Service,15.541800465642606
+Fine,Home painting,5.486870264157233
+Fine,Face care,-1.9775138512322588
+Moderate,Microwave Repair,30.96569813262578
+Fine,Bathroom cleaning,-10.82588361710117
+Fine,Hair colour,-5.526237116166085
+Fine,Face care,7.26003178750462
+Fine,Men/kids haircut,-32.46027135871194
+Moderate,Electrician,6.583157316932234
+Fine,Hair colour,-28.830397070927813
+Fine,Face care,-9.002176105969808
+Fine,Face care,20.131959957875154
+Fine,Kitchen cleaning,9.692843012565799
+Moderate,Laptop Repair,12.273020176990382
+Fine,Massage,14.394404160361333
+Fine,Home painting,-23.50555991715735
+Fine,Face care,-6.852547252740033
+Fine,Hair colour,6.268649681452746
+Fine,Men/kids haircut,3.0796929283888854
+Moderate,Carpenter,-25.272058794746123
+Extreme,Water Purifier Repair,16.623481980582785
+Fine,Hair colour,-14.536906762853283
+Fine,Home painting,21.128659895530262
+Moderate,Washing Machine Repair,8.09084151651798
+Fine,Full home cleaning,-6.666385765034867
+Fine,Full home cleaning,6.664639729052794
+Fine,Hair colour,0.9691967694138386
+Moderate,Microwave Repair,7.860185029182497
+Fine,Full home cleaning,12.33462066225938
+Fine,Home painting,45.6515185008704
+Fine,Face care,26.67728537204485
+Fine,Home painting,18.023018644898446
+Fine,Face care,-0.27718460496250924
+Fine,Home painting,14.347908197319459
+Extreme,AC Repair Service,9.892524339693114
+Moderate,Microwave Repair,-5.408773077791987
+Moderate,Carpenter,-21.553695932022276
+Extreme,Refrigerator Repair,23.671268218100852
+Extreme,AC Repair Service,-10.041953133757872
+Fine,Home painting,-0.6737569564213818
+Fine,Massage,-19.401635423297993
+Extreme,Water Purifier Repair,-1.7582226535358445
+Fine,Kitchen cleaning,16.269694348558296
+Extreme,Refrigerator Repair,29.251649565056667
+Fine,Men/kids haircut,-7.870504250005639
+Moderate,Electrician,-24.257688579866787
+Fine,Face care,-15.551026725170399
+Moderate,Chimney Repair,-16.883701520505042
+Fine,Bathroom cleaning,-19.937649391282555
+Fine,Full home cleaning,-13.14874944919804
+Moderate,Electrician,16.32214652174393
+Moderate,Plumber,11.602344930538704
+Fine,Home painting,-5.2392851367002695
+Fine,Full home cleaning,22.55251171090165
+Moderate,Chimney Repair,-25.927341129337158
+Fine,Massage,5.311278853466087
+Fine,Home painting,39.69597674902226
+Fine,Face care,-7.306117679413524
+Extreme,Water Purifier Repair,26.132495051907508
+Fine,Massage,-27.70848140290248
+Fine,Massage,-0.5915786086934577
+Fine,Shave/beard grooming,-4.045026725097435
+Fine,Face care,11.089165739620128
+Fine,Shave/beard grooming,-3.7583832821035634
+Moderate,Washing Machine Repair,-10.079083923111746
+Moderate,Washing Machine Repair,-17.551525629838302
+Fine,Bathroom cleaning,-11.793763048243562
+Fine,Massage,-11.298267130235518
+Fine,Kitchen cleaning,11.233114744703219
+Fine,Shave/beard grooming,21.311151605743063
+Extreme,AC Repair Service,-27.747923805194866
+Moderate,Laptop Repair,10.064664450651438
+Fine,Full home cleaning,-2.1626866200433676
+Fine,Face care,-25.82659451595383
+Fine,Kitchen cleaning,16.90357618264308
+Fine,Full home cleaning,-3.227643837962235
+Moderate,Washing Machine Repair,11.202181500170171
+Fine,Men/kids haircut,-17.530053308464854
+Extreme,Refrigerator Repair,5.266476869198805
+Moderate,Plumber,8.716986615020177
+Fine,Bathroom cleaning,-2.3666873602574583
+Fine,Home painting,29.587655819906388
+Moderate,Washing Machine Repair,5.355553213631104
+Extreme,Water Purifier Repair,-18.184083100146182
+Fine,Home painting,-15.90590985429419
+Fine,Shave/beard grooming,-1.3745592857806193
+Fine,Hair colour,-22.813305540530212
+Fine,Kitchen cleaning,-24.262555043616093
+Moderate,Plumber,25.63658577559113
+Fine,Home painting,5.915170563177884
+Moderate,Carpenter,-7.398099156511803
+Fine,Full home cleaning,4.591631333183977
+Moderate,Washing Machine Repair,28.963014700272357
+Fine,Hair colour,7.8199106994161465
+Moderate,Chimney Repair,2.59666987816195
+Extreme,Water Purifier Repair,19.579562999166097
+Extreme,AC Repair Service,-9.345260222945829
+Fine,Full home cleaning,21.02389828115986
+Moderate,Electrician,1.0942668630269512
+Fine,Men/kids haircut,29.278958819925304
+Fine,Bathroom cleaning,-7.628076072493078
+Moderate,Pest control,19.602517805940515
+Moderate,Electrician,29.801475917347723
+Fine,Shave/beard grooming,-6.01325499841585
+Fine,Hair colour,16.648963179077377
+Moderate,Carpenter,1.9156646225314913
+Moderate,Chimney Repair,-28.012270194105085
+Fine,Home painting,-30.740001229784998
+Fine,Bathroom cleaning,19.491841156657472
+Fine,Hair colour,8.472437287322146
+Fine,Men/kids haircut,7.091536543033285
+Fine,Hair colour,11.780125508051922
+Fine,Face care,18.460713259138856
+Fine,Bathroom cleaning,-3.5397700500913927
+Extreme,Water Purifier Repair,-22.167168879777623
+Fine,Massage,-1.5911374518835455
+Extreme,AC Repair Service,-11.231697123590171
+Moderate,Laptop Repair,7.5367431296946386
+Extreme,Water Purifier Repair,-10.877175719074346
+Fine,Bathroom cleaning,-4.794938357884785
+Moderate,Microwave Repair,10.01586646861771
+Fine,Full home cleaning,-10.953816577703313
+Moderate,Laptop Repair,25.227758036938262
+Fine,Bathroom cleaning,25.010320454178753
+Extreme,Refrigerator Repair,-5.889688329239559
+Fine,Men/kids haircut,10.864978018017315
+Fine,Massage,4.219056159886479
+Fine,Shave/beard grooming,22.710696827241303
+Fine,Kitchen cleaning,16.456466850985926
+Fine,Shave/beard grooming,-7.175277326580818
+Moderate,Washing Machine Repair,8.24425024617491
+Fine,Hair colour,-10.424865234930621
+Moderate,Chimney Repair,27.136804484157135
+Fine,Hair colour,-2.4207502599646107
+Fine,Shave/beard grooming,33.82151840623756
+Fine,Home painting,-6.228153691006901
+Fine,Bathroom cleaning,24.30455043993167
+Fine,Men/kids haircut,8.894532565667516
+Moderate,Washing Machine Repair,49.1260079055921
+Fine,Home painting,-0.3373855934619334
+Moderate,Plumber,-46.35488379733961
+Fine,Face care,4.703841940320754
+Extreme,Refrigerator Repair,-10.669612917089964
+Fine,Face care,-28.037090382560038
+Fine,Home painting,-21.762317737730925
+Moderate,Carpenter,-32.82064402712222
+Fine,Full home cleaning,-11.390268127969277
+Moderate,Plumber,18.129971113217508
+Fine,Full home cleaning,-13.271515026434312
+Fine,Face care,32.45550396101439
+Moderate,Microwave Repair,2.7444106982951944
+Fine,Bathroom cleaning,19.264866467646087
+Fine,Bathroom cleaning,-6.988012791214904
+Moderate,Chimney Repair,1.7250085196418807
+Extreme,Water Purifier Repair,-25.499470691672332
+Fine,Shave/beard grooming,-11.118507268679828
+Moderate,Carpenter,7.9767933433918
+Fine,Shave/beard grooming,-14.944776602670087
+Moderate,Washing Machine Repair,-3.191471995724411
+Moderate,Carpenter,23.684953061007157
+Fine,Shave/beard grooming,0.4611624887769056
+Fine,Kitchen cleaning,21.93972103772134
+Fine,Home painting,-10.864644773772202
+Moderate,Electrician,-5.824507920253172
+Fine,Full home cleaning,-44.65315573976231
+Fine,Kitchen cleaning,8.148042583037057
+Fine,Men/kids haircut,-18.6830006055949
+Extreme,Water Purifier Repair,-5.788053106048264
+Moderate,Pest control,-10.860089102816309
+Fine,Face care,6.303779183812127
+Fine,Hair colour,1.9086935555204068
+Fine,Massage,-4.951709584231196
+Fine,Hair colour,7.413963664695093
+Moderate,Washing Machine Repair,47.540449097112294
+Fine,Men/kids haircut,8.164911588638633
+Extreme,AC Repair Service,-11.013055181640375
+Fine,Home painting,-4.076830205337687
+Moderate,Microwave Repair,-6.492391254886051
+Fine,Hair colour,29.97942075388825
+Moderate,Washing Machine Repair,-17.055188244004807
+Moderate,Pest control,-0.5978364722323316
+Extreme,AC Repair Service,20.016985123018035
+Moderate,Pest control,-13.32092128639932
+Fine,Face care,-13.08227957365671
+Extreme,Refrigerator Repair,-8.294775458548212
+Moderate,Laptop Repair,-16.64307617228976
+Fine,Face care,7.339859454377581
+Moderate,Washing Machine Repair,-5.780073456184653
+Fine,Kitchen cleaning,5.6082407583669145
+Fine,Bathroom cleaning,-10.565397326214832
+Fine,Bathroom cleaning,-12.705292196768967
+Moderate,Electrician,16.571140966815634
+Fine,Home painting,17.558112708519758
+Moderate,Pest control,-15.126844776541922
+Moderate,Plumber,5.959465997512354
+Fine,Massage,-2.0540656031271567
+Fine,Full home cleaning,-15.62213959349128
+Fine,Face care,-17.679697054992072
+Moderate,Electrician,-3.4214562258800596
+Moderate,Pest control,-48.7832101095935
+Fine,Face care,-29.5177291663691
+Fine,Massage,-7.631996180982361
+Extreme,Water Purifier Repair,15.251040847343907
+Fine,Kitchen cleaning,27.725632417772385
+Fine,Home painting,24.298667411812346
+Fine,Full home cleaning,-7.3015739555845025
+Fine,Kitchen cleaning,-24.017739917402952
+Moderate,Pest control,8.247781869818745
+Fine,Face care,-17.95775748853798
+Fine,Kitchen cleaning,24.838169608197095
+Fine,Massage,21.251098944104164
+Fine,Face care,29.903212356837358
+Moderate,Plumber,-42.895196705923354
+Extreme,Refrigerator Repair,-20.343023533747846
+Moderate,Plumber,18.520675907951556
+Fine,Shave/beard grooming,33.19894300855377
+Fine,Home painting,12.288479232602906
+Fine,Full home cleaning,-0.538175870249017
+Moderate,Plumber,3.0540655924572944
+Fine,Home painting,-3.3098851386848867
+Fine,Bathroom cleaning,-5.181481834369634
+Fine,Hair colour,26.542724635320898
+Fine,Bathroom cleaning,-7.857721460162442
+Fine,Kitchen cleaning,-3.153196746390179
+Fine,Shave/beard grooming,-29.09942674171294
+Fine,Men/kids haircut,11.853441589545588
+Fine,Bathroom cleaning,-13.855626803100948
+Fine,Kitchen cleaning,-15.426538718885665
+Moderate,Microwave Repair,1.2791501532574168
+Fine,Full home cleaning,50.52797441353617
+Moderate,Microwave Repair,-10.941556971879361
+Fine,Men/kids haircut,-61.21980877023161
+Fine,Home painting,-23.883129081429566
+Fine,Face care,-0.19717498543325648
+Fine,Hair colour,-35.974842795367564
+Fine,Bathroom cleaning,-2.4430226618470825
+Moderate,Chimney Repair,-4.834441923350369
+Moderate,Chimney Repair,0.7698783028488896
+Fine,Face care,22.25203551661087
+Fine,Massage,21.518165912234146
+Fine,Face care,-9.132532954773733
+Moderate,Plumber,21.13134689984748
+Fine,Kitchen cleaning,-12.275262117247456
+Fine,Hair colour,-38.33712259123032
+Moderate,Laptop Repair,2.836444622974738
+Fine,Home painting,-27.75847477492365
+Extreme,Water Purifier Repair,-31.64841839564238
+Fine,Face care,-23.764335886406002
+Extreme,Water Purifier Repair,-0.39129896028878164
+Moderate,Electrician,-23.195675589186454
+Fine,Massage,20.330363067199826
+Moderate,Electrician,-27.038698027916087
+Moderate,Chimney Repair,-16.53698163960397
+Extreme,Refrigerator Repair,15.331207263475399
+Fine,Home painting,-49.22381399873473
+Fine,Kitchen cleaning,-11.9782087861491
+Fine,Shave/beard grooming,1.516950567364087
+Extreme,Refrigerator Repair,11.053799268611046
+Moderate,Laptop Repair,2.354799310718803
+Fine,Massage,7.923054298976125
+Moderate,Washing Machine Repair,6.263051762967674
+Fine,Bathroom cleaning,-17.289345253552252
+Fine,Massage,-24.099687184421445
+Fine,Men/kids haircut,5.184586850947151
+Moderate,Chimney Repair,11.139408381964124
+Fine,Bathroom cleaning,-29.95826931245222
+Moderate,Pest control,-45.42114148193405
+Extreme,Water Purifier Repair,4.955421143702057
+Fine,Face care,-2.339086737510948
+Moderate,Laptop Repair,9.552515675645733
+Moderate,Chimney Repair,8.111616262148203
+Fine,Massage,3.547358843190901
+Fine,Full home cleaning,3.2965957794075864
+Moderate,Carpenter,-20.37336821947863
+Extreme,Refrigerator Repair,32.16284959240477
+Fine,Full home cleaning,13.433420764060909
+Moderate,Microwave Repair,36.71782472589731
+Moderate,Pest control,-6.456375400507016
+Extreme,AC Repair Service,34.97253062681223
+Fine,Face care,5.6457527529421325
+Fine,Home painting,-57.485794065830405
+Fine,Shave/beard grooming,-15.396527595697451
+Fine,Face care,-19.73901927875003
+Fine,Full home cleaning,11.990636678033118
+Fine,Full home cleaning,13.318868049871806
+Fine,Full home cleaning,6.207431970193104
+Fine,Bathroom cleaning,40.23211608492177
+Fine,Hair colour,16.699529977005408
+Fine,Massage,5.736374758828594
+Fine,Shave/beard grooming,3.432500394650502
+Moderate,Microwave Repair,9.71299401280853
+Fine,Shave/beard grooming,10.66343642779884
+Fine,Shave/beard grooming,6.05781442043434
+Fine,Home painting,22.891982452652183
+Moderate,Microwave Repair,-22.171142912722548
+Extreme,Refrigerator Repair,-25.08427208348859
+Fine,Kitchen cleaning,-12.030695407712066
+Fine,Face care,3.608591604041678
+Fine,Shave/beard grooming,-12.60541880824621
+Moderate,Laptop Repair,7.948161601279527
+Fine,Shave/beard grooming,8.685656041728155
+Fine,Full home cleaning,-12.330222402428541
+Fine,Men/kids haircut,-21.443935201615282
+Fine,Hair colour,4.883866816000645
+Fine,Face care,-4.621796907682917
+Fine,Face care,29.8543180732776
+Moderate,Laptop Repair,-6.009418515755892
+Fine,Hair colour,13.72515565131349
+Extreme,AC Repair Service,-22.941203377228398
+Moderate,Microwave Repair,26.665848940326853
+Moderate,Microwave Repair,15.30737393238089
+Fine,Hair colour,-7.359317229145393
+Moderate,Microwave Repair,-36.44541038439493
+Extreme,Refrigerator Repair,15.330593236535188
+Fine,Bathroom cleaning,17.325056820684836
+Fine,Full home cleaning,17.972799797085457
+Fine,Bathroom cleaning,11.551696447053835
+Fine,Massage,-3.477517674590378
+Extreme,Refrigerator Repair,20.840221464051318
+Moderate,Microwave Repair,-13.202877584411025
+Fine,Bathroom cleaning,19.649649805256345
+Moderate,Carpenter,3.6108698608824104
+Moderate,Pest control,0.14238066048524278
+Moderate,Chimney Repair,56.26590663055893
+Fine,Men/kids haircut,6.005273085365092
+Fine,Home painting,-6.062828012301466
+Fine,Face care,-14.515198266625212
+Fine,Home painting,6.5020988838135025
+Moderate,Laptop Repair,5.1770636677619475
+Moderate,Plumber,-32.54463392430472
+Fine,Full home cleaning,-14.291223426113792
+Fine,Face care,-29.77898101034701
+Fine,Men/kids haircut,9.769536094800626
+Moderate,Pest control,-5.8577307993803185
+Fine,Face care,0.38226478420094123
+Moderate,Carpenter,12.072487860201232
+Fine,Men/kids haircut,-22.20766202378408
+Moderate,Electrician,14.91731787378043
+Fine,Bathroom cleaning,-13.641081835994767
+Fine,Face care,-15.868804273303525
+Moderate,Washing Machine Repair,2.5473776253419804
+Moderate,Electrician,-2.7776150103803143
+Fine,Face care,-30.06595552364488
+Fine,Home painting,-5.942593753314024
+Moderate,Pest control,1.8108882456851618
+Fine,Full home cleaning,-13.783415744487357
+Extreme,Water Purifier Repair,-7.532452555313802
+Moderate,Washing Machine Repair,-1.1752701925853482
+Extreme,Water Purifier Repair,0.11676673069563123
+Moderate,Laptop Repair,-27.346436285762046
+Moderate,Washing Machine Repair,18.094722300923
+Moderate,Plumber,-33.16735375707203
+Moderate,Microwave Repair,14.162636737012914
+Fine,Face care,17.218066299302347
+Fine,Home painting,-2.8654358593309848
+Fine,Home painting,9.16373637757911
+Moderate,Chimney Repair,-35.9450438494052
+Fine,Men/kids haircut,7.304104988157244
+Moderate,Microwave Repair,-33.14017457777804
+Fine,Home painting,34.6514137392719
+Fine,Kitchen cleaning,-9.872662779779365
+Fine,Bathroom cleaning,7.48253342150044
+Fine,Men/kids haircut,2.6459132724727583
+Extreme,AC Repair Service,-2.2966868054384477
+Fine,Men/kids haircut,-0.32830183145196135
+Extreme,Refrigerator Repair,22.57716118616735
+Moderate,Electrician,-6.1922750026474835
+Fine,Face care,19.92379374505201
+Moderate,Chimney Repair,16.43133700323357
+Moderate,Pest control,0.09663527028869875
+Moderate,Microwave Repair,19.455630019637297
+Fine,Face care,-3.6127047340215395
+Extreme,AC Repair Service,10.670781770388743
+Fine,Kitchen cleaning,-17.622420727998445
+Moderate,Pest control,25.397575615939957
+Fine,Face care,-6.372049812546724
+Fine,Shave/beard grooming,10.096515112547703
+Fine,Men/kids haircut,-14.180805394554747
+Moderate,Laptop Repair,-12.90818666197745
+Fine,Bathroom cleaning,-17.74068306831628
+Moderate,Microwave Repair,-15.865636298670484
+Moderate,Microwave Repair,-16.73142747254304
+Fine,Home painting,-60.170479534102235
+Fine,Men/kids haircut,-33.70910914742534
+Moderate,Washing Machine Repair,-3.0082608410793545
+Moderate,Washing Machine Repair,31.74980706039888
+Extreme,Water Purifier Repair,-22.741272567097162
+Fine,Shave/beard grooming,0.26168979444568763
+Moderate,Pest control,4.277080475119013
+Fine,Massage,16.411442729626717
+Fine,Full home cleaning,15.252983067751014
+Fine,Hair colour,-33.27173631146373
+Fine,Bathroom cleaning,-21.95691453508036
+Fine,Massage,14.847403036719893
+Moderate,Electrician,-4.472221454996363
+Fine,Bathroom cleaning,-5.029700149908269
+Extreme,Water Purifier Repair,-7.165007724617606
+Fine,Massage,-32.593407812732885
+Fine,Hair colour,19.330322205243956
+Fine,Kitchen cleaning,11.23260214351016
+Fine,Men/kids haircut,-15.319262153775304
+Extreme,Refrigerator Repair,18.20487759607466
+Extreme,AC Repair Service,-11.322241758921756
+Fine,Hair colour,-1.9469394271862113
+Fine,Men/kids haircut,-16.71911535138947
+Fine,Bathroom cleaning,28.139843471214093
+Fine,Bathroom cleaning,-36.044707261241534
+Fine,Shave/beard grooming,2.4639519141684656
+Fine,Face care,-44.95499675872847
+Fine,Bathroom cleaning,-20.59484841577525
+Moderate,Pest control,-32.87637098213657
+Fine,Shave/beard grooming,10.206346422681115
+Extreme,Refrigerator Repair,-10.506936478123972
+Moderate,Microwave Repair,-13.158748301802463
+Fine,Massage,8.771114338281949
+Moderate,Laptop Repair,39.63846033478759
+Fine,Massage,-1.2289844759640687
+Fine,Face care,1.2811701068771386
+Moderate,Carpenter,-12.636408475845553
+Fine,Full home cleaning,27.174358616999882
+Moderate,Carpenter,17.63782176105632
+Fine,Men/kids haircut,42.13523509311544
+Fine,Hair colour,0.8220315209413216
+Fine,Bathroom cleaning,-0.8910463601253232
+Moderate,Carpenter,7.437188167556627
+Fine,Bathroom cleaning,17.537381555918884
+Extreme,AC Repair Service,14.687586756196463
+Moderate,Plumber,2.015338536313614
+Fine,Kitchen cleaning,26.70898322122833
+Moderate,Pest control,-14.320743976841843
+Moderate,Laptop Repair,-37.9767594408125
+Fine,Bathroom cleaning,22.78369163292135
+Fine,Face care,-20.0051524663918
+Fine,Face care,-25.858778551915535
+Fine,Home painting,-8.088054895811576
+Fine,Men/kids haircut,12.993878525508038
+Moderate,Electrician,67.64175952920256
+Fine,Home painting,-20.43030368299572
+Fine,Bathroom cleaning,50.86966054830843
+Fine,Face care,-57.594372976409915
+Moderate,Pest control,-34.1703778744693
+Fine,Hair colour,-9.292619364835664
+Fine,Kitchen cleaning,11.162706838402974
+Moderate,Washing Machine Repair,-17.22032812187463
+Fine,Bathroom cleaning,-27.77044607673595
+Moderate,Plumber,47.90182078985323
+Moderate,Electrician,-30.523155141439332
+Fine,Full home cleaning,-23.484601762777476
+Fine,Face care,-18.931566122734033
+Fine,Bathroom cleaning,-42.894306804487314
+Extreme,AC Repair Service,-0.7958760214207519
+Fine,Men/kids haircut,-4.170437148567409
+Fine,Massage,8.899648242456655
+Moderate,Chimney Repair,13.957492599855934
+Moderate,Microwave Repair,-0.6382415892771864
+Fine,Bathroom cleaning,1.766672633645279
+Fine,Hair colour,17.307701428141
+Fine,Face care,11.168582110225467
+Fine,Hair colour,0.45354783975190466
+Moderate,Washing Machine Repair,-16.82581803054853
+Fine,Bathroom cleaning,8.549679896419791
+Fine,Home painting,5.053888514530792
+Extreme,AC Repair Service,-25.74229003659348
+Fine,Full home cleaning,-29.517846329488716
+Fine,Bathroom cleaning,-3.350618122704638
+Fine,Bathroom cleaning,10.753620568002244
+Moderate,Electrician,-46.16477183121003
+Moderate,Electrician,-11.629593517907841
+Fine,Men/kids haircut,-3.9089052400379902
+Fine,Bathroom cleaning,21.962242753275856
+Fine,Full home cleaning,-28.299687158943534
+Fine,Face care,-20.210514827065676
+Fine,Bathroom cleaning,-0.6014160024065719
+Fine,Home painting,9.78641170911568
+Moderate,Plumber,-23.326111880586275
+Fine,Men/kids haircut,-3.510584083825785
+Fine,Bathroom cleaning,12.42292717721237
+Fine,Hair colour,24.702851477919033
+Extreme,AC Repair Service,-8.054581208463325
+Extreme,Water Purifier Repair,-39.385383010179005
+Fine,Shave/beard grooming,-15.258437627999541
+Moderate,Washing Machine Repair,-15.354578319726988
+Fine,Shave/beard grooming,-2.1237514449391828
+Moderate,Electrician,-21.06316091084536
+Fine,Home painting,-4.247565568012642
+Fine,Shave/beard grooming,21.586119981470986
+Moderate,Laptop Repair,-21.919931833203936
+Fine,Shave/beard grooming,-41.0377243347063
+Moderate,Microwave Repair,13.938141917951704
+Extreme,Water Purifier Repair,19.25033837126074
+Moderate,Electrician,-27.108821388249915
+Moderate,Pest control,-14.089979959589192
+Fine,Home painting,-47.978202689765126
+Moderate,Washing Machine Repair,6.007060200243242
+Moderate,Pest control,17.868691894717795
+Fine,Full home cleaning,36.18610428918271
+Fine,Full home cleaning,-26.59473341806393
+Fine,Shave/beard grooming,14.662335250357186
+Moderate,Carpenter,25.444468262889885
+Fine,Bathroom cleaning,20.440573283509057
+Moderate,Chimney Repair,-2.7055149235092895
+Fine,Bathroom cleaning,-8.202840437812537
+Fine,Face care,-2.1295838215816985
+Fine,Hair colour,12.743085211277869
+Moderate,Pest control,19.919718123958184
+Fine,Men/kids haircut,-19.459444085785407
+Moderate,Pest control,11.663009297925539
+Fine,Men/kids haircut,-1.5475692424518772
+Moderate,Washing Machine Repair,-3.0732347259485646
+Fine,Massage,-29.14583316182042
+Fine,Hair colour,-14.198403666388252
+Moderate,Laptop Repair,12.720825469918847
+Fine,Shave/beard grooming,-17.76735836011502
+Moderate,Pest control,-12.045321215630224
+Moderate,Plumber,-8.754340726452686
+Extreme,Refrigerator Repair,16.73253649945735
+Fine,Shave/beard grooming,15.88521379131173
+Fine,Full home cleaning,-28.81312378667173
+Fine,Massage,13.189608001546562
+Moderate,Pest control,48.68777791778087
+Moderate,Plumber,5.549996418015043
+Fine,Massage,5.013280962711551
+Fine,Men/kids haircut,11.17139023072524
+Fine,Men/kids haircut,-1.8722747999553033
+Moderate,Pest control,-1.7673649847828774
+Fine,Full home cleaning,20.723807912675504
+Moderate,Laptop Repair,47.09669344037502
+Fine,Full home cleaning,7.360118105390473
+Moderate,Electrician,-6.82133029767359
+Moderate,Plumber,28.882802946456202
+Moderate,Plumber,7.8531080114969365
+Fine,Full home cleaning,-12.498127452990502
+Fine,Bathroom cleaning,29.33190149369058
+Fine,Kitchen cleaning,0.4105709322199409
+Fine,Home painting,-10.131510878650696
+Fine,Massage,16.802264335539743
+Moderate,Plumber,-3.3772770905236027
+Moderate,Chimney Repair,10.983421492953642
+Fine,Massage,-15.682497573753638
+Moderate,Microwave Repair,9.798297267861049
+Moderate,Carpenter,0.9593820740152404
+Fine,Kitchen cleaning,-2.3453105548286852
+Fine,Hair colour,9.526867332486407
+Extreme,Water Purifier Repair,-13.535593697970674
+Fine,Hair colour,16.626372332738317
+Moderate,Washing Machine Repair,-29.745552540682993
+Moderate,Chimney Repair,7.230732750952945
+Fine,Face care,-3.476652648247966
+Moderate,Chimney Repair,-20.22558019465606
+Fine,Face care,30.2505441563488
+Moderate,Chimney Repair,25.408506113266558
+Moderate,Microwave Repair,-26.536343501401518
+Fine,Men/kids haircut,8.480050610310455
+Moderate,Electrician,-7.395970021685394
+Fine,Home painting,-14.980557637698428
+Fine,Shave/beard grooming,-17.875687950000753
+Moderate,Carpenter,36.33539158647723
+Fine,Massage,23.73375167552667
+Extreme,Refrigerator Repair,-17.247189439739735
+Moderate,Microwave Repair,-10.063392481587698
+Fine,Bathroom cleaning,-19.25519722782915
+Fine,Hair colour,-17.364460992325665
+Fine,Home painting,-5.789111409008559
+Fine,Full home cleaning,9.308245504490221
+Fine,Shave/beard grooming,21.049986497896967
+Fine,Men/kids haircut,-16.484576407058917
+Moderate,Electrician,-27.7061140320794
+Fine,Men/kids haircut,-13.937750936475217
+Fine,Bathroom cleaning,-10.336041506109579
+Fine,Shave/beard grooming,13.937265155786987
+Fine,Men/kids haircut,-6.97080021185336
+Fine,Face care,-2.3530821806382316
+Fine,Full home cleaning,10.331933010067619
+Fine,Massage,22.643813698817684
+Fine,Shave/beard grooming,-9.753662654139765
+Fine,Men/kids haircut,10.136731586743775
+Moderate,Microwave Repair,34.74203888090317
+Fine,Home painting,19.485932109265853
+Moderate,Microwave Repair,-3.0015297220481525
+Fine,Hair colour,-11.73227764146044
+Fine,Hair colour,-37.353915255996
+Moderate,Washing Machine Repair,12.811737199401312
+Fine,Home painting,9.868036642479526
+Moderate,Pest control,-12.804688068479098
+Moderate,Plumber,12.309309201278547
+Fine,Massage,-14.84620520228365
+Moderate,Washing Machine Repair,22.71668239505545
+Fine,Face care,2.179023579184836
+Moderate,Carpenter,0.872783699956179
+Moderate,Microwave Repair,49.42885642881923
+Fine,Bathroom cleaning,-18.508193873423927
+Fine,Men/kids haircut,9.669127008255655
+Fine,Bathroom cleaning,38.959824227037984
+Moderate,Plumber,0.735117917924927
+Fine,Kitchen cleaning,-2.3772474955597267
+Fine,Home painting,35.42976805359772
+Fine,Bathroom cleaning,18.76993993015537
+Moderate,Washing Machine Repair,7.890718733030909
+Fine,Massage,-14.599902777095542
+Fine,Full home cleaning,-9.531835519419525
+Fine,Men/kids haircut,22.024197185982132
+Moderate,Washing Machine Repair,-21.41374841324264
+Fine,Hair colour,-16.087179789085596
+Moderate,Chimney Repair,-45.57145523667557
+Fine,Home painting,-25.27289110684322
+Moderate,Pest control,6.535740454262854
+Fine,Face care,-30.245770566760264
+Moderate,Electrician,0.8852667604486859
+Fine,Kitchen cleaning,33.922815719753736
+Fine,Bathroom cleaning,-4.280011312879902
+Fine,Bathroom cleaning,0.6178419808278626
+Fine,Hair colour,-24.266217586866333
+Extreme,Refrigerator Repair,2.748644293770732
+Extreme,Water Purifier Repair,-27.633823089817675
+Moderate,Microwave Repair,19.441555730798413
+Moderate,Washing Machine Repair,-21.534412033210472
+Moderate,Electrician,-2.392012222748571
+Moderate,Carpenter,-48.348777825741706
+Fine,Bathroom cleaning,-9.59829258615606
+Fine,Shave/beard grooming,-2.417254280909557
+Moderate,Carpenter,-33.71358356871964
+Extreme,Water Purifier Repair,-7.8695151455558605
+Fine,Bathroom cleaning,-15.967848980950643
+Fine,Hair colour,-36.519803782669335
+Fine,Kitchen cleaning,1.260340445700533
+Moderate,Washing Machine Repair,-2.0402920271241105
+Fine,Bathroom cleaning,-7.1114252989875615
+Fine,Shave/beard grooming,13.741165385647792
+Fine,Hair colour,20.287807532036723
+Moderate,Washing Machine Repair,-18.08813197626247
+Fine,Massage,13.684384526740303
+Fine,Kitchen cleaning,22.486637615841182
+Fine,Full home cleaning,26.39076643767804
+Moderate,Chimney Repair,22.488470740059327
+Fine,Face care,5.13242792989538
+Fine,Home painting,-1.3214207682041064
+Fine,Shave/beard grooming,-11.585002070342052
+Moderate,Carpenter,-17.180377384008136
+Moderate,Microwave Repair,-1.1498665016458078
+Fine,Shave/beard grooming,-14.091374417010382
+Fine,Massage,13.255988230913092
+Moderate,Washing Machine Repair,4.096555387066967
+Moderate,Washing Machine Repair,14.442979953473534
+Fine,Shave/beard grooming,-18.758728608244574
+Moderate,Laptop Repair,6.40052909849836
+Fine,Home painting,5.6514647250536765
+Moderate,Pest control,-5.583297517191806
+Fine,Full home cleaning,-9.943611666169117
+Fine,Massage,33.40863890016054
+Extreme,Water Purifier Repair,-5.967828599835796
+Moderate,Pest control,-36.443818183102984
+Fine,Shave/beard grooming,-8.34810983843829
+Moderate,Laptop Repair,-1.5305863386419674
+Fine,Hair colour,7.901284288506054
+Fine,Kitchen cleaning,-17.805168434993533
+Fine,Massage,11.478698711355982
+Fine,Face care,-17.962043011642493
+Fine,Home painting,-6.998972951070054
+Extreme,Water Purifier Repair,7.96694731400239
+Fine,Men/kids haircut,-6.164628904706467
+Fine,Massage,-42.43262309271498
+Moderate,Plumber,-14.774458553553957
+Extreme,Refrigerator Repair,27.02734278875273
+Fine,Men/kids haircut,28.12110396824449
+Extreme,AC Repair Service,4.02741961727942
+Fine,Home painting,-39.04595130977834
+Fine,Full home cleaning,-10.528510505113848
+Fine,Kitchen cleaning,-2.4401724100526447
+Moderate,Pest control,1.7522329014860192
+Extreme,Water Purifier Repair,12.37366066070207
+Moderate,Laptop Repair,3.0795380467114835
+Moderate,Plumber,-20.529195510961888
+Moderate,Washing Machine Repair,-45.55856993759007
+Moderate,Chimney Repair,2.823439790418691
+Moderate,Chimney Repair,-0.9209269700454101
+Fine,Bathroom cleaning,13.400966045325127
+Fine,Full home cleaning,6.134246129039406
+Fine,Massage,-12.073189199767715
+Moderate,Microwave Repair,15.922482475359521
+Fine,Kitchen cleaning,-2.7288553918082945
+Fine,Full home cleaning,9.60820105324713
+Fine,Full home cleaning,-24.596650555263363
+Moderate,Plumber,-42.40345665107765
+Moderate,Pest control,7.365771843600694
+Fine,Hair colour,18.039495033750967
+Moderate,Plumber,-6.390117168021922
+Fine,Hair colour,-8.329745921800306
+Fine,Hair colour,9.240348003328954
+Fine,Hair colour,2.223146805541539
+Fine,Full home cleaning,19.542708342595393
+Fine,Face care,-34.85057612620663
+Moderate,Plumber,-28.65660297823191
+Fine,Men/kids haircut,-47.81405071729958
+Moderate,Carpenter,-32.00187921670371
+Fine,Men/kids haircut,-8.972752857676808
+Fine,Bathroom cleaning,26.92251143612609
+Fine,Men/kids haircut,-31.510485362659853
+Moderate,Chimney Repair,-28.858530799375302
+Fine,Shave/beard grooming,-13.732116803965926
+Fine,Massage,8.052987212586167
+Moderate,Laptop Repair,-4.067211080652423
+Moderate,Electrician,18.737990515150205
+Fine,Bathroom cleaning,-40.274153777932185
+Fine,Men/kids haircut,-34.481962921945836
+Fine,Face care,-49.966196586794936
+Extreme,Refrigerator Repair,11.993998083167272
+Fine,Kitchen cleaning,-14.649306586242144
+Fine,Hair colour,21.695522807103522
+Moderate,Electrician,7.5245035129045545
+Fine,Men/kids haircut,2.5018661715104513
+Moderate,Washing Machine Repair,18.644214345102014
+Fine,Full home cleaning,23.949199548315512
+Extreme,Water Purifier Repair,24.991389111661594
+Fine,Kitchen cleaning,-9.559642961213067
+Moderate,Electrician,-4.268763934709058
+Fine,Home painting,5.991555160698729
+Moderate,Electrician,6.15008744619734
+Fine,Bathroom cleaning,-21.02409675883954
+Moderate,Electrician,-7.395501165512814
+Fine,Men/kids haircut,19.3705169269947
+Moderate,Carpenter,-21.00380488075945
+Extreme,Refrigerator Repair,-0.6880452462111852
+Extreme,Refrigerator Repair,1.6391829284143804
+Fine,Face care,10.290644190303874
+Fine,Hair colour,-19.278640686524586
+Moderate,Carpenter,-6.408274871914536
+Fine,Massage,-14.928640220416883
+Fine,Face care,-28.472532002184035
+Fine,Face care,-48.74360269594717
+Moderate,Microwave Repair,7.015534457170499
+Extreme,Refrigerator Repair,-4.256759553077299
+Moderate,Electrician,3.881758227502119
+Fine,Men/kids haircut,26.70147684310131
+Fine,Home painting,-28.892886329030087
+Fine,Home painting,34.72706766844285
+Fine,Home painting,-35.16803756218253
+Moderate,Pest control,10.123000199870773
+Moderate,Pest control,-8.469947438512781
+Fine,Bathroom cleaning,23.554744703687813
+Extreme,AC Repair Service,-22.078219918022825
+Moderate,Carpenter,-24.41859910182036
+Moderate,Plumber,-14.609026840547203
+Fine,Shave/beard grooming,-19.24269687119521
+Moderate,Plumber,30.95338118391496
+Fine,Men/kids haircut,-1.1536720311972544
+Fine,Kitchen cleaning,-32.80864494663226
+Moderate,Washing Machine Repair,-24.56954256493017
+Fine,Home painting,-11.874747644302133
+Moderate,Pest control,-11.150495375603988
+Fine,Men/kids haircut,21.020932599662203
+Fine,Kitchen cleaning,-4.704066858217805
+Fine,Kitchen cleaning,-33.62418089215818
+Fine,Massage,31.201071302671043
+Moderate,Plumber,6.144967463652788
+Fine,Face care,10.4093212809472
+Fine,Hair colour,-36.91852676894428
+Moderate,Carpenter,-0.23823944664346522
+Extreme,Refrigerator Repair,7.628731536496247
+Fine,Men/kids haircut,-5.341751536161226
+Fine,Massage,-24.937298022140926
+Extreme,Water Purifier Repair,-20.82098934139809
+Fine,Men/kids haircut,-7.820924021588125
+Fine,Full home cleaning,-7.363710414847944
+Fine,Hair colour,-8.291751710734825
+Moderate,Chimney Repair,0.07245635698205517
+Moderate,Electrician,-23.64039360579428
+Fine,Massage,17.99440093616586
+Extreme,Refrigerator Repair,24.05538211222749
+Fine,Men/kids haircut,9.867599662758522
+Moderate,Plumber,11.675330461337621
+Moderate,Pest control,-7.006882594793241
+Fine,Massage,25.86300808364907
+Moderate,Carpenter,15.528743704725155
+Extreme,Refrigerator Repair,27.0902092120089
+Extreme,Refrigerator Repair,9.377418744077024
+Fine,Massage,41.65583397816218
+Fine,Men/kids haircut,-16.10370508012982
+Moderate,Carpenter,0.712815819795575
+Fine,Hair colour,-8.050760960243165
+Moderate,Laptop Repair,-0.7439541983840641
+Moderate,Electrician,-22.774374596879746
+Fine,Shave/beard grooming,8.390031521284598
+Fine,Bathroom cleaning,7.044382870960901
+Fine,Full home cleaning,15.8481663910312
+Fine,Hair colour,-22.992455180545612
+Moderate,Pest control,-16.808835923680643
+Extreme,AC Repair Service,-20.957533701241804
+Fine,Massage,17.381156121439986
+Moderate,Pest control,-7.49552948119859
+Fine,Home painting,8.43468508877338
+Fine,Face care,1.04774407085947
+Moderate,Washing Machine Repair,42.85976516790736
+Fine,Face care,-4.277005332842778
+Fine,Shave/beard grooming,-23.180319220561692
+Moderate,Pest control,-4.888495230619751
+Extreme,AC Repair Service,8.828755041433022
+Moderate,Microwave Repair,-4.984117355575194
+Fine,Massage,-0.9638018912641154
+Extreme,Refrigerator Repair,-8.042470338891846
+Moderate,Microwave Repair,-10.146841688619201
+Fine,Shave/beard grooming,12.855893042557945
+Fine,Men/kids haircut,-12.945817513490532
+Fine,Hair colour,8.664326304668853
+Moderate,Laptop Repair,30.191787379758633
+Extreme,AC Repair Service,-13.180801327833473
+Fine,Massage,13.212835251764234
+Moderate,Electrician,21.90429342430887
+Fine,Home painting,-24.943405406351538
+Fine,Full home cleaning,-12.720952269207705
+Fine,Kitchen cleaning,6.676960306603947
+Fine,Bathroom cleaning,-5.200603390875928
+Moderate,Laptop Repair,-29.714906893441928
+Fine,Bathroom cleaning,4.136939897235716
+Extreme,Water Purifier Repair,-4.267594439175531
+Moderate,Laptop Repair,7.624841852343216
+Fine,Shave/beard grooming,-5.472843750126687
+Fine,Shave/beard grooming,-20.227175029247398
+Fine,Face care,-8.122881339092606
+Moderate,Carpenter,4.97354212703435
+Extreme,AC Repair Service,-14.811259118798594
+Fine,Full home cleaning,20.215815417604105
+Fine,Home painting,7.2340782066453135
+Moderate,Chimney Repair,10.139932780478023
+Fine,Bathroom cleaning,26.801642205781434
+Fine,Face care,14.705116522321989
+Fine,Men/kids haircut,20.064959477279757
+Fine,Bathroom cleaning,-13.652859163540477
+Fine,Massage,-11.903642838217985
+Fine,Full home cleaning,43.91673641541531
+Moderate,Electrician,5.926011674012486
+Fine,Bathroom cleaning,8.853314657609033
+Fine,Hair colour,0.7020992904189356
+Fine,Men/kids haircut,-24.974215887851447
+Fine,Shave/beard grooming,-16.24425611027338
+Fine,Home painting,-28.65229035293688
+Extreme,Water Purifier Repair,-13.067404074592142
+Fine,Home painting,8.583029679343317
+Fine,Kitchen cleaning,-27.544234717980018
+Fine,Massage,-13.852862322483222
+Fine,Hair colour,9.739430350505385
+Extreme,AC Repair Service,32.13854535510205
+Moderate,Microwave Repair,5.160100157827378
+Moderate,Carpenter,-5.893472848116912
+Moderate,Washing Machine Repair,16.70573147561991
+Fine,Massage,-9.506676549147166
+Moderate,Washing Machine Repair,4.310577626097875
+Fine,Face care,-0.9458918622881308
+Extreme,Water Purifier Repair,-22.3478507945542
+Fine,Kitchen cleaning,-1.9800416762529367
+Fine,Home painting,9.806897779895394
+Fine,Shave/beard grooming,-2.9987085825389737
+Moderate,Chimney Repair,5.605269998221672
+Fine,Bathroom cleaning,11.636296091321066
+Fine,Shave/beard grooming,-19.62786874177848
+Moderate,Electrician,52.76799559722871
+Moderate,Plumber,20.589930283633624
+Moderate,Microwave Repair,-7.402278581861525
+Moderate,Electrician,24.81321426863959
+Fine,Men/kids haircut,-9.022036689500405
+Moderate,Microwave Repair,-3.6804066775777295
+Fine,Kitchen cleaning,20.429591624111172
+Fine,Full home cleaning,-13.994371036804761
+Fine,Full home cleaning,45.313264579333136
+Moderate,Electrician,-2.3341303672845406
+Fine,Bathroom cleaning,0.4733362877625592
+Extreme,Water Purifier Repair,31.364020214521062
+Fine,Shave/beard grooming,-13.104378387211588
+Fine,Bathroom cleaning,30.357680381434125
+Fine,Shave/beard grooming,-5.311230930214885
+Fine,Shave/beard grooming,8.022442574090881
+Moderate,Carpenter,22.385130243033426
+Fine,Home painting,-16.835175248996517
+Fine,Full home cleaning,-12.21442373682234
+Moderate,Electrician,-12.064787426555196
+Fine,Face care,2.6192693070222246
+Fine,Kitchen cleaning,-29.163740224514125
+Extreme,AC Repair Service,6.211557134905953
+Fine,Men/kids haircut,-18.017639355287212
+Fine,Hair colour,4.67609636032247
+Fine,Hair colour,-24.441093040187553
+Moderate,Microwave Repair,-51.0911996912123
+Extreme,Water Purifier Repair,-30.496108074509884
+Fine,Full home cleaning,-3.1133719344548334
+Moderate,Chimney Repair,-23.61768409224652
+Fine,Hair colour,43.14522918482152
+Moderate,Electrician,26.264279788159307
+Fine,Men/kids haircut,-13.066071002188071
+Moderate,Carpenter,0.42578653875630706
+Moderate,Laptop Repair,12.012155354906968
+Extreme,Water Purifier Repair,-9.726177296763272
+Fine,Hair colour,-15.492764828112941
+Extreme,AC Repair Service,-26.624322336435352
+Fine,Bathroom cleaning,5.79968583612288
+Moderate,Carpenter,15.421333198706419
+Moderate,Electrician,1.8800664884819371
+Moderate,Washing Machine Repair,30.6930180288567
+Fine,Hair colour,-3.5411393130869118
+Moderate,Plumber,12.460942322337997
+Moderate,Washing Machine Repair,42.67943485957444
+Fine,Full home cleaning,8.45569742649088
+Extreme,AC Repair Service,19.984156461752363
+Fine,Face care,-9.920637402359683
+Fine,Kitchen cleaning,-42.66252937425313
+Fine,Shave/beard grooming,29.429568735854957
+Moderate,Pest control,19.909857579563944
+Extreme,Refrigerator Repair,-14.396368575331362
+Fine,Shave/beard grooming,29.93534345453805
+Moderate,Electrician,-18.66349057691518
+Moderate,Chimney Repair,8.302908511700412
+Moderate,Laptop Repair,40.525986682833306
+Fine,Bathroom cleaning,-17.10737048466986
+Extreme,AC Repair Service,2.5015825368652207
+Fine,Bathroom cleaning,-8.61040517410774
+Fine,Shave/beard grooming,26.55729228353641
+Moderate,Electrician,8.166096198011253
+Moderate,Microwave Repair,-12.051149183815493
+Moderate,Washing Machine Repair,-32.28043315613214
+Extreme,AC Repair Service,-7.753394552399277
+Fine,Massage,-30.422864591736463
+Fine,Face care,-15.571607771158963
+Moderate,Laptop Repair,-3.039074899596913
+Fine,Men/kids haircut,-12.385289177292737
+Fine,Massage,32.42532042480526
+Fine,Shave/beard grooming,-18.78742429007625
+Moderate,Plumber,6.296064833364035
+Moderate,Electrician,24.461787900791407
+Extreme,Water Purifier Repair,-27.023882378255074
+Extreme,Refrigerator Repair,-31.651678023699873
+Extreme,Refrigerator Repair,-11.99643961716253
+Moderate,Carpenter,12.055116259137167
+Moderate,Microwave Repair,-6.683490996090866
+Fine,Men/kids haircut,-4.9812935225878245
+Extreme,AC Repair Service,-5.758711844388156
+Moderate,Pest control,8.4045451937083
+Fine,Shave/beard grooming,-6.291718412308944
+Moderate,Microwave Repair,6.5355291795363
+Moderate,Washing Machine Repair,-14.95494140758385
+Moderate,Pest control,6.357229534165379
+Moderate,Carpenter,22.325814779941375
+Fine,Full home cleaning,-25.10114609596895
+Fine,Hair colour,-8.702876184995262
+Moderate,Plumber,28.761777457937917
+Moderate,Laptop Repair,20.001306280602126
+Moderate,Chimney Repair,-27.192941682120644
+Fine,Men/kids haircut,-6.194437569126816
+Moderate,Electrician,-6.068985982130179
+Moderate,Electrician,44.76493392517583
+Fine,Shave/beard grooming,-8.508490500413718
+Moderate,Microwave Repair,-15.689118898638396
+Moderate,Carpenter,-16.24222642459553
+Moderate,Plumber,-31.161266246751506
+Moderate,Pest control,-5.572073152487681
+Extreme,AC Repair Service,-18.441951330808028
+Moderate,Washing Machine Repair,17.05484901753344
+Moderate,Washing Machine Repair,-5.081148818562809
+Fine,Shave/beard grooming,-7.155277767855877
+Fine,Shave/beard grooming,-22.99007697360851
+Moderate,Laptop Repair,-15.11734659801093
+Moderate,Electrician,-52.795743153687525
+Extreme,Water Purifier Repair,-28.430228717226274
+Fine,Men/kids haircut,9.182706358240093
+Fine,Home painting,-15.336521780443814
+Fine,Men/kids haircut,0.1148166672217129
+Moderate,Laptop Repair,-8.918473032973012
+Fine,Shave/beard grooming,-7.296189602097764
+Extreme,AC Repair Service,-11.14278438694473
+Extreme,AC Repair Service,-1.593605342766934
+Moderate,Pest control,9.288174534523286
+Fine,Massage,14.919303200503773
+Extreme,AC Repair Service,19.450285973410747
+Extreme,Refrigerator Repair,15.985392053670093
+Extreme,Water Purifier Repair,-6.693267903685446
+Fine,Hair colour,16.571007755208974
+Moderate,Electrician,56.41490928371682
+Fine,Home painting,16.48771014886577

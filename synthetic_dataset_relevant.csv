@@ -1,0 +1,1001 @@
+Weather_condition,Service,Price_change_factor
+Fine,Hair colour,-33
+Fine,AC Repair Service,18
+Fine,Laptop Repair,-11
+Moderate,Bathroom cleaning,23
+Extreme,Laptop Repair,3
+Fine,Bathroom cleaning,34
+Extreme,Bathroom cleaning,-47
+Moderate,Plumber,40
+Moderate,AC Repair Service,-21
+Fine,Washing Machine Repair,-8
+Fine,Washing Machine Repair,48
+Fine,Full home cleaning,28
+Extreme,Full home cleaning,-31
+Fine,Chimney Repair,50
+Fine,AC Repair Service,30
+Fine,Washing Machine Repair,35
+Fine,Hair colour,26
+Fine,Hair colour,24
+Fine,Chimney Repair,-11
+Fine,Bathroom cleaning,30
+Fine,Kitchen cleaning,-9
+Fine,Bathroom cleaning,39
+Moderate,Hair colour,26
+Fine,Kitchen cleaning,8
+Fine,Refrigerator Repair,-45
+Extreme,Bathroom cleaning,-43
+Fine,Full home cleaning,-6
+Moderate,Bathroom cleaning,17
+Extreme,Home painting,43
+Moderate,Bathroom cleaning,-43
+Moderate,Electrician,-33
+Fine,Chimney Repair,29
+Extreme,Kitchen cleaning,3
+Moderate,AC Repair Service,47
+Moderate,Laptop Repair,3
+Extreme,Pest control,2
+Fine,Plumber,-4
+Moderate,AC Repair Service,-9
+Fine,Full home cleaning,11
+Moderate,Face care,44
+Moderate,Full home cleaning,26
+Fine,Carpenter,17
+Extreme,Pest control,-14
+Fine,Refrigerator Repair,-30
+Moderate,Water Purifier Repair,-24
+Fine,Massage,-31
+Moderate,Face care,-40
+Fine,Full home cleaning,-1
+Fine,Plumber,-18
+Fine,Pest control,-20
+Fine,Bathroom cleaning,50
+Fine,Washing Machine Repair,13
+Fine,AC Repair Service,2
+Fine,Washing Machine Repair,-15
+Fine,AC Repair Service,46
+Fine,Carpenter,-15
+Moderate,Kitchen cleaning,-33
+Extreme,Massage,-44
+Extreme,Full home cleaning,38
+Fine,Plumber,5
+Fine,Face care,-33
+Fine,Electrician,-45
+Fine,Electrician,-33
+Fine,Massage,16
+Extreme,Electrician,-14
+Moderate,Plumber,-23
+Moderate,AC Repair Service,29
+Moderate,Full home cleaning,48
+Moderate,Plumber,48
+Fine,Full home cleaning,-21
+Fine,AC Repair Service,41
+Extreme,Kitchen cleaning,-50
+Fine,Refrigerator Repair,-42
+Moderate,Hair colour,-20
+Fine,Chimney Repair,15
+Moderate,Full home cleaning,35
+Fine,Electrician,25
+Fine,Plumber,11
+Fine,Plumber,25
+Moderate,Microwave Repair,33
+Fine,Chimney Repair,-17
+Fine,Plumber,-27
+Fine,Microwave Repair,32
+Extreme,Full home cleaning,-41
+Fine,Massage,30
+Moderate,Home painting,-43
+Moderate,Massage,-13
+Moderate,Shave/beard grooming,41
+Fine,Chimney Repair,37
+Fine,Carpenter,28
+Moderate,Electrician,16
+Fine,AC Repair Service,-44
+Fine,Washing Machine Repair,-41
+Fine,Water Purifier Repair,39
+Moderate,Kitchen cleaning,-27
+Fine,Pest control,-38
+Fine,Laptop Repair,12
+Fine,Electrician,-50
+Fine,Pest control,8
+Fine,Chimney Repair,29
+Moderate,Laptop Repair,1
+Extreme,Carpenter,-15
+Moderate,Carpenter,17
+Moderate,Bathroom cleaning,-50
+Moderate,Carpenter,8
+Fine,Kitchen cleaning,-24
+Moderate,Refrigerator Repair,43
+Extreme,Full home cleaning,-3
+Fine,Water Purifier Repair,-20
+Fine,Washing Machine Repair,-3
+Fine,Bathroom cleaning,-5
+Fine,Massage,-50
+Fine,Full home cleaning,48
+Fine,Kitchen cleaning,-26
+Fine,Washing Machine Repair,-32
+Moderate,AC Repair Service,45
+Moderate,Face care,31
+Fine,Bathroom cleaning,20
+Fine,Face care,22
+Fine,Pest control,-33
+Moderate,Washing Machine Repair,-31
+Moderate,Electrician,16
+Fine,Carpenter,-29
+Fine,Massage,-25
+Moderate,Washing Machine Repair,-18
+Fine,Microwave Repair,-42
+Fine,Kitchen cleaning,-36
+Fine,Kitchen cleaning,40
+Fine,Water Purifier Repair,21
+Fine,Chimney Repair,35
+Extreme,Washing Machine Repair,-37
+Fine,Full home cleaning,-27
+Fine,Bathroom cleaning,-31
+Moderate,Water Purifier Repair,-25
+Moderate,Electrician,11
+Fine,Full home cleaning,-42
+Fine,AC Repair Service,9
+Fine,Bathroom cleaning,13
+Fine,Electrician,43
+Moderate,Refrigerator Repair,4
+Moderate,Kitchen cleaning,1
+Fine,Massage,42
+Fine,Plumber,-41
+Moderate,Hair colour,-7
+Fine,Kitchen cleaning,-17
+Fine,Face care,-46
+Fine,Electrician,-47
+Moderate,Refrigerator Repair,-27
+Fine,Carpenter,21
+Moderate,AC Repair Service,-33
+Fine,Carpenter,-46
+Moderate,Plumber,-46
+Moderate,Massage,-38
+Moderate,Carpenter,-11
+Fine,Hair colour,-41
+Extreme,Water Purifier Repair,-19
+Moderate,Chimney Repair,-11
+Fine,Laptop Repair,33
+Fine,AC Repair Service,-33
+Extreme,Bathroom cleaning,39
+Fine,Pest control,-25
+Fine,Plumber,36
+Moderate,Plumber,41
+Fine,Refrigerator Repair,-26
+Fine,Massage,49
+Fine,Kitchen cleaning,13
+Moderate,AC Repair Service,-8
+Fine,Water Purifier Repair,19
+Fine,Microwave Repair,-4
+Moderate,Pest control,47
+Fine,Massage,-43
+Moderate,Electrician,2
+Extreme,AC Repair Service,-26
+Moderate,Chimney Repair,-17
+Moderate,Home painting,48
+Moderate,Bathroom cleaning,-37
+Fine,Face care,-26
+Fine,Full home cleaning,44
+Moderate,Kitchen cleaning,23
+Moderate,Full home cleaning,41
+Moderate,Plumber,-45
+Fine,Plumber,-15
+Fine,Pest control,-18
+Moderate,Pest control,-38
+Fine,Microwave Repair,35
+Fine,AC Repair Service,21
+Fine,Plumber,5
+Fine,Plumber,-9
+Fine,Bathroom cleaning,-4
+Moderate,Massage,33
+Fine,Shave/beard grooming,36
+Fine,Refrigerator Repair,-48
+Fine,Bathroom cleaning,-43
+Fine,Laptop Repair,44
+Fine,Plumber,42
+Fine,Refrigerator Repair,14
+Fine,Carpenter,0
+Fine,Home painting,-38
+Moderate,Laptop Repair,-14
+Moderate,Electrician,-38
+Moderate,Plumber,-33
+Moderate,Electrician,25
+Fine,Full home cleaning,-11
+Fine,Microwave Repair,-17
+Moderate,Plumber,32
+Fine,Massage,48
+Moderate,Microwave Repair,-3
+Fine,Massage,-33
+Fine,Hair colour,37
+Fine,Bathroom cleaning,-49
+Fine,Microwave Repair,-42
+Fine,Electrician,-13
+Moderate,Hair colour,1
+Fine,Plumber,44
+Fine,Shave/beard grooming,46
+Fine,Carpenter,-26
+Fine,Electrician,42
+Fine,Chimney Repair,-8
+Extreme,Kitchen cleaning,-12
+Fine,Full home cleaning,-5
+Fine,Washing Machine Repair,-21
+Moderate,Home painting,32
+Extreme,AC Repair Service,24
+Fine,AC Repair Service,-42
+Fine,Massage,21
+Moderate,Home painting,-44
+Moderate,Bathroom cleaning,9
+Fine,Plumber,-19
+Extreme,Washing Machine Repair,48
+Fine,Plumber,-1
+Fine,Pest control,-19
+Fine,Pest control,-37
+Fine,Kitchen cleaning,3
+Extreme,Plumber,-11
+Fine,Bathroom cleaning,-20
+Moderate,Kitchen cleaning,-42
+Fine,Laptop Repair,-36
+Moderate,Pest control,-14
+Moderate,Pest control,-42
+Fine,Hair colour,-26
+Fine,Electrician,23
+Fine,Massage,-27
+Fine,Plumber,20
+Extreme,Electrician,-8
+Fine,Microwave Repair,26
+Fine,Washing Machine Repair,-6
+Fine,AC Repair Service,38
+Extreme,Massage,38
+Extreme,Washing Machine Repair,4
+Fine,Electrician,39
+Moderate,Water Purifier Repair,-28
+Moderate,Full home cleaning,-23
+Moderate,AC Repair Service,35
+Moderate,Refrigerator Repair,-23
+Extreme,Full home cleaning,17
+Fine,Electrician,-6
+Fine,Kitchen cleaning,3
+Fine,Refrigerator Repair,-27
+Extreme,Refrigerator Repair,21
+Extreme,Face care,-42
+Fine,Refrigerator Repair,-24
+Fine,Plumber,-10
+Fine,Plumber,-30
+Fine,Massage,0
+Fine,Bathroom cleaning,38
+Fine,Plumber,23
+Moderate,Water Purifier Repair,4
+Fine,Washing Machine Repair,-44
+Fine,Home painting,-44
+Fine,Full home cleaning,-36
+Fine,Bathroom cleaning,-48
+Moderate,Bathroom cleaning,16
+Moderate,Bathroom cleaning,-2
+Moderate,Face care,21
+Fine,Laptop Repair,-22
+Fine,Home painting,49
+Moderate,Plumber,-35
+Extreme,Kitchen cleaning,41
+Fine,Electrician,-44
+Extreme,Plumber,45
+Moderate,Full home cleaning,-23
+Fine,Washing Machine Repair,-16
+Fine,Chimney Repair,49
+Fine,Face care,-44
+Moderate,Kitchen cleaning,15
+Extreme,Refrigerator Repair,12
+Fine,Laptop Repair,-20
+Fine,Chimney Repair,-13
+Fine,Bathroom cleaning,30
+Moderate,Electrician,-8
+Moderate,Kitchen cleaning,11
+Fine,Laptop Repair,-39
+Fine,Kitchen cleaning,-18
+Extreme,Microwave Repair,-33
+Fine,Kitchen cleaning,-45
+Fine,AC Repair Service,-48
+Moderate,Washing Machine Repair,33
+Fine,Bathroom cleaning,-34
+Moderate,Plumber,38
+Moderate,Plumber,3
+Moderate,Plumber,10
+Moderate,Home painting,29
+Moderate,Laptop Repair,-44
+Fine,Bathroom cleaning,9
+Moderate,Electrician,-20
+Fine,Full home cleaning,-29
+Moderate,Plumber,-30
+Fine,Chimney Repair,-16
+Fine,Plumber,-44
+Fine,Microwave Repair,-22
+Moderate,Washing Machine Repair,-46
+Extreme,Electrician,46
+Fine,Kitchen cleaning,41
+Fine,Refrigerator Repair,2
+Fine,Carpenter,-13
+Extreme,Washing Machine Repair,-9
+Fine,Full home cleaning,-2
+Moderate,Electrician,40
+Fine,Kitchen cleaning,-31
+Moderate,Chimney Repair,22
+Fine,Electrician,27
+Fine,Full home cleaning,20
+Fine,Refrigerator Repair,20
+Fine,Bathroom cleaning,42
+Fine,Pest control,-29
+Moderate,Plumber,0
+Fine,Electrician,-44
+Moderate,Kitchen cleaning,20
+Fine,Electrician,42
+Fine,Kitchen cleaning,-48
+Extreme,Pest control,-15
+Fine,Washing Machine Repair,8
+Fine,Electrician,14
+Moderate,Massage,-30
+Fine,Shave/beard grooming,-18
+Fine,Pest control,-15
+Fine,Shave/beard grooming,6
+Extreme,Pest control,-49
+Fine,Chimney Repair,28
+Fine,Washing Machine Repair,48
+Moderate,Electrician,4
+Fine,Refrigerator Repair,-31
+Extreme,Washing Machine Repair,12
+Fine,Refrigerator Repair,16
+Moderate,Carpenter,34
+Fine,Bathroom cleaning,-16
+Fine,Washing Machine Repair,5
+Fine,Electrician,43
+Moderate,Water Purifier Repair,33
+Moderate,Laptop Repair,47
+Fine,Plumber,20
+Fine,Massage,-38
+Moderate,AC Repair Service,-21
+Fine,Refrigerator Repair,-24
+Fine,Home painting,-17
+Moderate,Massage,27
+Fine,Full home cleaning,23
+Fine,Plumber,-16
+Fine,Laptop Repair,-6
+Fine,Washing Machine Repair,22
+Extreme,Washing Machine Repair,27
+Moderate,Chimney Repair,-2
+Extreme,Plumber,-45
+Fine,Laptop Repair,47
+Fine,Water Purifier Repair,3
+Extreme,Shave/beard grooming,-3
+Fine,Kitchen cleaning,32
+Extreme,Kitchen cleaning,-29
+Moderate,Carpenter,-35
+Fine,AC Repair Service,-1
+Fine,Home painting,39
+Fine,Full home cleaning,36
+Extreme,Plumber,-5
+Moderate,Kitchen cleaning,0
+Fine,Pest control,47
+Fine,Massage,-37
+Moderate,Microwave Repair,-42
+Extreme,Home painting,-33
+Fine,Microwave Repair,23
+Fine,Hair colour,-18
+Fine,Refrigerator Repair,45
+Fine,Washing Machine Repair,11
+Fine,Electrician,-5
+Fine,Full home cleaning,32
+Fine,Full home cleaning,0
+Fine,Chimney Repair,8
+Fine,Carpenter,28
+Fine,Water Purifier Repair,48
+Fine,Face care,-50
+Fine,Carpenter,10
+Fine,AC Repair Service,6
+Fine,Chimney Repair,27
+Moderate,Kitchen cleaning,-17
+Moderate,Laptop Repair,-24
+Fine,Home painting,48
+Fine,Carpenter,25
+Extreme,Pest control,-32
+Fine,Bathroom cleaning,9
+Fine,Plumber,34
+Extreme,Microwave Repair,-49
+Moderate,AC Repair Service,-9
+Fine,Plumber,22
+Fine,Shave/beard grooming,39
+Fine,Full home cleaning,20
+Extreme,Bathroom cleaning,-14
+Fine,Full home cleaning,48
+Moderate,Water Purifier Repair,-19
+Fine,Microwave Repair,32
+Fine,Chimney Repair,31
+Fine,Carpenter,-38
+Fine,Massage,-10
+Moderate,Microwave Repair,37
+Fine,Carpenter,-14
+Fine,Full home cleaning,26
+Moderate,Electrician,18
+Moderate,Bathroom cleaning,4
+Fine,Washing Machine Repair,-32
+Fine,Microwave Repair,8
+Extreme,Water Purifier Repair,-18
+Fine,Full home cleaning,33
+Moderate,Microwave Repair,-41
+Fine,Washing Machine Repair,17
+Fine,Pest control,-48
+Fine,Laptop Repair,6
+Fine,AC Repair Service,2
+Extreme,Kitchen cleaning,-47
+Fine,Washing Machine Repair,36
+Fine,Massage,-30
+Moderate,Plumber,23
+Moderate,Massage,-50
+Moderate,AC Repair Service,-11
+Fine,Chimney Repair,-15
+Fine,AC Repair Service,41
+Moderate,Plumber,19
+Fine,Full home cleaning,13
+Fine,AC Repair Service,-1
+Fine,Electrician,17
+Moderate,Kitchen cleaning,25
+Moderate,Kitchen cleaning,18
+Fine,Massage,16
+Fine,Home painting,4
+Moderate,AC Repair Service,-31
+Fine,Refrigerator Repair,0
+Fine,AC Repair Service,2
+Fine,Laptop Repair,15
+Moderate,Full home cleaning,24
+Fine,Home painting,-44
+Fine,Kitchen cleaning,-7
+Fine,Microwave Repair,7
+Moderate,Home painting,6
+Fine,Water Purifier Repair,-27
+Fine,AC Repair Service,6
+Fine,Electrician,5
+Moderate,Washing Machine Repair,18
+Fine,Full home cleaning,40
+Fine,Men/kids haircut,-29
+Fine,Hair colour,34
+Fine,Carpenter,14
+Fine,Pest control,-12
+Moderate,Laptop Repair,1
+Moderate,Plumber,-45
+Fine,AC Repair Service,-49
+Fine,Water Purifier Repair,-48
+Moderate,Full home cleaning,-34
+Fine,Electrician,-35
+Moderate,Bathroom cleaning,-25
+Fine,Massage,14
+Fine,Bathroom cleaning,-25
+Fine,Bathroom cleaning,-30
+Fine,Washing Machine Repair,1
+Fine,Kitchen cleaning,-37
+Moderate,Bathroom cleaning,-7
+Extreme,Electrician,16
+Moderate,Refrigerator Repair,-14
+Fine,AC Repair Service,-24
+Moderate,Plumber,25
+Extreme,Hair colour,43
+Fine,Microwave Repair,13
+Fine,Carpenter,6
+Moderate,Full home cleaning,-35
+Fine,Electrician,15
+Fine,Home painting,46
+Fine,Kitchen cleaning,-19
+Fine,Chimney Repair,-32
+Fine,Pest control,31
+Fine,Washing Machine Repair,-46
+Moderate,Washing Machine Repair,14
+Moderate,Water Purifier Repair,-20
+Fine,Pest control,-25
+Extreme,Electrician,-27
+Moderate,Chimney Repair,-15
+Fine,Washing Machine Repair,-33
+Fine,Washing Machine Repair,-24
+Moderate,Refrigerator Repair,-48
+Extreme,Bathroom cleaning,4
+Extreme,Electrician,31
+Extreme,Plumber,-38
+Moderate,Carpenter,7
+Moderate,Massage,40
+Moderate,Bathroom cleaning,18
+Fine,Chimney Repair,-33
+Fine,Shave/beard grooming,-36
+Fine,Electrician,-28
+Fine,Bathroom cleaning,-15
+Fine,Chimney Repair,-46
+Moderate,Electrician,-21
+Fine,Electrician,48
+Moderate,Bathroom cleaning,37
+Fine,Plumber,33
+Fine,Washing Machine Repair,-2
+Extreme,Chimney Repair,25
+Fine,Home painting,22
+Fine,Pest control,-30
+Extreme,Carpenter,-5
+Fine,Full home cleaning,-14
+Moderate,Bathroom cleaning,11
+Fine,Carpenter,-50
+Extreme,Plumber,-5
+Moderate,Kitchen cleaning,4
+Fine,Full home cleaning,-22
+Fine,Washing Machine Repair,11
+Moderate,Water Purifier Repair,20
+Fine,Pest control,0
+Fine,Laptop Repair,1
+Fine,Washing Machine Repair,9
+Fine,Water Purifier Repair,27
+Moderate,Washing Machine Repair,-42
+Extreme,Washing Machine Repair,22
+Moderate,Washing Machine Repair,-23
+Moderate,Chimney Repair,-45
+Fine,Home painting,-20
+Fine,Full home cleaning,7
+Moderate,Bathroom cleaning,27
+Fine,Water Purifier Repair,-5
+Fine,Plumber,50
+Fine,Hair colour,0
+Fine,Plumber,35
+Moderate,Plumber,46
+Fine,Electrician,0
+Fine,Laptop Repair,34
+Fine,Carpenter,42
+Fine,Plumber,16
+Extreme,Pest control,-26
+Moderate,Full home cleaning,14
+Fine,Plumber,-12
+Extreme,Massage,46
+Fine,Bathroom cleaning,14
+Fine,Massage,9
+Moderate,Electrician,-30
+Fine,Laptop Repair,19
+Fine,Full home cleaning,-37
+Fine,AC Repair Service,-47
+Fine,Home painting,-40
+Fine,Full home cleaning,50
+Fine,Refrigerator Repair,49
+Fine,Chimney Repair,-35
+Moderate,Electrician,-8
+Moderate,Bathroom cleaning,2
+Extreme,Laptop Repair,16
+Fine,Bathroom cleaning,-32
+Fine,Massage,42
+Moderate,Home painting,-27
+Extreme,Full home cleaning,42
+Moderate,Refrigerator Repair,41
+Fine,Pest control,7
+Moderate,Face care,-41
+Moderate,Water Purifier Repair,-20
+Moderate,Microwave Repair,-45
+Fine,Plumber,-30
+Extreme,Massage,-33
+Fine,Full home cleaning,-31
+Fine,Bathroom cleaning,30
+Moderate,Pest control,-34
+Fine,Kitchen cleaning,28
+Fine,Home painting,2
+Fine,Bathroom cleaning,1
+Fine,Massage,-36
+Fine,Microwave Repair,-18
+Moderate,Bathroom cleaning,19
+Moderate,Chimney Repair,-33
+Fine,Men/kids haircut,9
+Fine,Carpenter,46
+Extreme,Microwave Repair,-44
+Moderate,Massage,45
+Extreme,Washing Machine Repair,37
+Moderate,Bathroom cleaning,-17
+Fine,Bathroom cleaning,4
+Extreme,AC Repair Service,8
+Fine,Washing Machine Repair,-27
+Moderate,Refrigerator Repair,-35
+Moderate,Kitchen cleaning,-11
+Moderate,Pest control,-9
+Moderate,Men/kids haircut,-17
+Moderate,Bathroom cleaning,-33
+Fine,Massage,-31
+Fine,Bathroom cleaning,27
+Extreme,Kitchen cleaning,-2
+Fine,Electrician,13
+Moderate,Pest control,36
+Fine,Bathroom cleaning,23
+Fine,Electrician,-29
+Fine,Microwave Repair,-1
+Fine,Carpenter,-32
+Fine,Refrigerator Repair,16
+Moderate,Laptop Repair,9
+Moderate,Massage,-48
+Fine,Plumber,-11
+Fine,Washing Machine Repair,8
+Fine,Plumber,-20
+Moderate,Hair colour,32
+Fine,Kitchen cleaning,12
+Fine,Washing Machine Repair,-48
+Fine,Chimney Repair,38
+Fine,Electrician,-33
+Fine,Home painting,9
+Fine,Kitchen cleaning,8
+Fine,Bathroom cleaning,39
+Fine,Water Purifier Repair,-31
+Moderate,Refrigerator Repair,-15
+Moderate,Full home cleaning,9
+Fine,Carpenter,-23
+Fine,Plumber,5
+Moderate,Microwave Repair,25
+Fine,Electrician,22
+Extreme,Full home cleaning,-20
+Fine,Electrician,-28
+Fine,Bathroom cleaning,25
+Fine,Home painting,48
+Fine,Washing Machine Repair,8
+Fine,Shave/beard grooming,-50
+Moderate,Chimney Repair,30
+Fine,Chimney Repair,-17
+Fine,Pest control,38
+Fine,Bathroom cleaning,47
+Moderate,Plumber,-34
+Fine,AC Repair Service,-7
+Moderate,Full home cleaning,36
+Moderate,Plumber,-25
+Fine,Plumber,-34
+Fine,Washing Machine Repair,-31
+Moderate,Electrician,5
+Fine,Home painting,47
+Moderate,Carpenter,-31
+Moderate,Chimney Repair,21
+Fine,Refrigerator Repair,12
+Moderate,Kitchen cleaning,19
+Fine,Washing Machine Repair,-12
+Moderate,Washing Machine Repair,-4
+Fine,Face care,18
+Moderate,Laptop Repair,-45
+Moderate,Pest control,31
+Moderate,Washing Machine Repair,11
+Moderate,Pest control,-33
+Fine,Full home cleaning,30
+Extreme,Water Purifier Repair,33
+Moderate,Refrigerator Repair,11
+Fine,AC Repair Service,37
+Extreme,Kitchen cleaning,-31
+Fine,Plumber,-26
+Fine,Kitchen cleaning,-49
+Fine,Refrigerator Repair,-33
+Moderate,Washing Machine Repair,-46
+Fine,Electrician,37
+Fine,Massage,-21
+Fine,Plumber,-33
+Fine,Full home cleaning,46
+Extreme,Refrigerator Repair,-30
+Fine,AC Repair Service,-48
+Fine,Chimney Repair,-2
+Fine,Kitchen cleaning,-15
+Fine,Kitchen cleaning,-6
+Moderate,Electrician,24
+Fine,Pest control,38
+Moderate,Kitchen cleaning,41
+Fine,Pest control,-11
+Fine,Pest control,-8
+Fine,Carpenter,50
+Fine,Plumber,-40
+Moderate,Full home cleaning,19
+Fine,Full home cleaning,20
+Fine,Shave/beard grooming,-38
+Fine,Massage,10
+Fine,Chimney Repair,-12
+Fine,Shave/beard grooming,4
+Fine,AC Repair Service,-49
+Fine,Full home cleaning,19
+Fine,Kitchen cleaning,-3
+Fine,Refrigerator Repair,-46
+Moderate,Pest control,19
+Fine,Plumber,-45
+Moderate,Electrician,21
+Fine,Kitchen cleaning,10
+Fine,Full home cleaning,21
+Fine,Electrician,47
+Fine,Plumber,40
+Moderate,Bathroom cleaning,35
+Fine,Full home cleaning,37
+Fine,AC Repair Service,-49
+Moderate,Massage,7
+Fine,Kitchen cleaning,-11
+Fine,Carpenter,-8
+Fine,Kitchen cleaning,38
+Fine,Hair colour,28
+Extreme,Chimney Repair,-36
+Moderate,Hair colour,-45
+Fine,Electrician,-17
+Extreme,Pest control,-22
+Fine,Refrigerator Repair,30
+Fine,Washing Machine Repair,35
+Fine,Hair colour,21
+Moderate,Kitchen cleaning,-39
+Fine,Full home cleaning,-38
+Fine,Refrigerator Repair,22
+Fine,Electrician,-23
+Extreme,Laptop Repair,5
+Fine,Kitchen cleaning,26
+Fine,Washing Machine Repair,-9
+Fine,Plumber,6
+Moderate,Plumber,0
+Fine,AC Repair Service,47
+Moderate,Massage,37
+Fine,Pest control,10
+Fine,Plumber,14
+Extreme,Shave/beard grooming,-4
+Fine,Massage,-21
+Moderate,Full home cleaning,9
+Fine,Kitchen cleaning,-21
+Moderate,Washing Machine Repair,13
+Fine,Microwave Repair,5
+Fine,Pest control,42
+Fine,Refrigerator Repair,-50
+Fine,Carpenter,22
+Fine,Electrician,-18
+Fine,Pest control,44
+Moderate,Face care,-42
+Fine,Washing Machine Repair,-30
+Moderate,Electrician,-17
+Fine,Electrician,37
+Fine,Kitchen cleaning,10
+Fine,Carpenter,16
+Fine,Bathroom cleaning,8
+Moderate,Washing Machine Repair,25
+Moderate,AC Repair Service,36
+Fine,AC Repair Service,15
+Moderate,AC Repair Service,39
+Fine,Bathroom cleaning,28
+Fine,Kitchen cleaning,-47
+Fine,Water Purifier Repair,-4
+Fine,Shave/beard grooming,-47
+Moderate,Microwave Repair,21
+Fine,Plumber,2
+Moderate,Plumber,7
+Fine,Laptop Repair,48
+Fine,Kitchen cleaning,23
+Moderate,Bathroom cleaning,-16
+Fine,Massage,36
+Fine,Home painting,-19
+Fine,Kitchen cleaning,-4
+Fine,Water Purifier Repair,14
+Moderate,Refrigerator Repair,-25
+Extreme,Electrician,9
+Fine,Carpenter,-4
+Fine,Chimney Repair,-1
+Fine,Hair colour,-29
+Fine,Microwave Repair,-32
+Fine,Kitchen cleaning,-27
+Moderate,Water Purifier Repair,-22
+Fine,Shave/beard grooming,16
+Extreme,Plumber,45
+Extreme,Electrician,3
+Extreme,Plumber,24
+Fine,Men/kids haircut,49
+Fine,Electrician,-37
+Moderate,Bathroom cleaning,-21
+Fine,Bathroom cleaning,43
+Fine,Microwave Repair,-26
+Fine,Water Purifier Repair,-45
+Moderate,Full home cleaning,43
+Fine,Shave/beard grooming,18
+Moderate,Massage,-32
+Fine,AC Repair Service,-39
+Fine,Microwave Repair,-15
+Moderate,AC Repair Service,-13
+Fine,Water Purifier Repair,-6
+Moderate,Face care,46
+Fine,Laptop Repair,23
+Fine,Microwave Repair,49
+Moderate,Hair colour,-13
+Fine,Bathroom cleaning,-28
+Fine,Microwave Repair,-14
+Fine,Massage,-16
+Extreme,Refrigerator Repair,-29
+Moderate,Full home cleaning,-6
+Fine,Massage,-12
+Fine,AC Repair Service,-21
+Extreme,Kitchen cleaning,-9
+Extreme,Laptop Repair,-47
+Fine,Pest control,7
+Moderate,AC Repair Service,-44
+Moderate,Home painting,32
+Fine,Water Purifier Repair,50
+Fine,Massage,-11
+Fine,Washing Machine Repair,42
+Fine,Kitchen cleaning,-18
+Fine,Plumber,-45
+Fine,Full home cleaning,7
+Fine,Pest control,8
+Fine,Shave/beard grooming,38
+Fine,Electrician,-5
+Moderate,Men/kids haircut,22
+Moderate,Bathroom cleaning,-14
+Moderate,Bathroom cleaning,-45
+Fine,Kitchen cleaning,8
+Fine,Washing Machine Repair,41
+Fine,Plumber,-31
+Fine,Pest control,31
+Moderate,Washing Machine Repair,-17
+Fine,Plumber,-40
+Moderate,Men/kids haircut,-10
+Fine,Bathroom cleaning,27
+Extreme,Home painting,-45
+Fine,Massage,32
+Fine,Bathroom cleaning,-16
+Fine,Washing Machine Repair,-40
+Moderate,Electrician,-37
+Fine,Refrigerator Repair,-19
+Fine,Bathroom cleaning,-21
+Fine,Face care,-46
+Moderate,Home painting,32
+Fine,Bathroom cleaning,11
+Moderate,Microwave Repair,28
+Fine,Massage,-16
+Fine,Pest control,-10
+Fine,Carpenter,-35
+Moderate,Full home cleaning,25
+Moderate,Hair colour,15
+Extreme,Hair colour,49
+Moderate,Shave/beard grooming,20
+Fine,Washing Machine Repair,-28
+Fine,Hair colour,-20
+Fine,Carpenter,31
+Fine,Refrigerator Repair,-11
+Fine,AC Repair Service,31
+Moderate,Kitchen cleaning,26
+Moderate,Home painting,-13
+Fine,Bathroom cleaning,41
+Fine,Washing Machine Repair,13
+Fine,Carpenter,7
+Fine,Home painting,26
+Fine,Shave/beard grooming,17
+Moderate,Hair colour,32
+Moderate,Water Purifier Repair,-43
+Moderate,Full home cleaning,-38
+Fine,Electrician,17
+Moderate,Pest control,-22
+Fine,Full home cleaning,-12
+Moderate,Chimney Repair,0
+Moderate,Kitchen cleaning,-4
+Fine,Refrigerator Repair,30
+Fine,Full home cleaning,29
+Fine,Carpenter,22
+Fine,Water Purifier Repair,-36
+Moderate,Massage,-50
+Fine,AC Repair Service,-3
+Fine,Carpenter,15
+Fine,Microwave Repair,2
+Moderate,Bathroom cleaning,16
+Extreme,Plumber,47
+Moderate,Carpenter,-50
+Moderate,Microwave Repair,-40
+Extreme,Kitchen cleaning,28
+Extreme,Carpenter,20
+Extreme,Kitchen cleaning,-49
+Fine,AC Repair Service,46
+Moderate,Full home cleaning,1
+Moderate,Carpenter,43
+Fine,Hair colour,12
+Fine,Full home cleaning,-30
+Moderate,Home painting,42
+Moderate,Pest control,14
+Moderate,AC Repair Service,-26
+Fine,Water Purifier Repair,-22
+Moderate,Washing Machine Repair,-48
+Moderate,Chimney Repair,-34
+Fine,Pest control,21
+Fine,Refrigerator Repair,-41
+Fine,Carpenter,4
+Fine,Refrigerator Repair,-3
+Moderate,AC Repair Service,44
+Fine,Electrician,35
+Fine,AC Repair Service,-9
+Extreme,Shave/beard grooming,5
+Moderate,Hair colour,-31
+Fine,Chimney Repair,26
+Moderate,Kitchen cleaning,-21
+Extreme,Hair colour,-23
+Fine,Laptop Repair,-26
+Moderate,Chimney Repair,7
+Moderate,Microwave Repair,18
+Fine,Refrigerator Repair,8
+Fine,Electrician,-37
+Fine,Kitchen cleaning,-46
+Fine,Pest control,-29
+Extreme,Chimney Repair,-22
+Fine,Face care,19
+Moderate,Plumber,-3
+Fine,Plumber,20
+Extreme,Electrician,-39
+Fine,Plumber,-29
+Fine,Washing Machine Repair,-4
+Fine,Carpenter,26
+Fine,Full home cleaning,44
+Moderate,Hair colour,-34
+Fine,AC Repair Service,-30
+Fine,Microwave Repair,-20
+Extreme,Kitchen cleaning,-34
+Fine,Electrician,-3
+Fine,Plumber,-4
+Fine,Carpenter,26
+Moderate,Massage,41
+Moderate,Men/kids haircut,35
+Fine,Carpenter,27
+Moderate,Carpenter,-32
+Extreme,Electrician,-15
+Fine,Electrician,-36
+Extreme,Kitchen cleaning,-17
+Fine,Plumber,22
+Fine,Chimney Repair,-29
+Fine,Kitchen cleaning,-32
+Extreme,Electrician,-27
+Fine,Plumber,-12
+Moderate,Washing Machine Repair,-50
+Fine,Laptop Repair,49
+Fine,Carpenter,0
+Moderate,AC Repair Service,-9
+Fine,Men/kids haircut,4
+Fine,Carpenter,42
+Fine,Kitchen cleaning,32
+Fine,Kitchen cleaning,-35
+Extreme,Plumber,47
+Fine,AC Repair Service,42
+Moderate,Pest control,2
+Fine,Washing Machine Repair,-22
+Fine,Full home cleaning,4
+Moderate,Refrigerator Repair,0
+Fine,Chimney Repair,47
+Moderate,Massage,50
+Fine,Washing Machine Repair,3
+Moderate,Water Purifier Repair,43
+Fine,Bathroom cleaning,22
+Fine,Chimney Repair,-18
+Fine,Pest control,41
+Fine,Face care,12
+Moderate,Pest control,32
+Fine,Full home cleaning,-35
+Fine,Electrician,-31
+Moderate,Chimney Repair,6
+Moderate,Kitchen cleaning,-25
+Extreme,Home painting,4
+Fine,Plumber,43
+Fine,Pest control,-27
+Fine,Pest control,22
+Moderate,Shave/beard grooming,46
+Fine,Kitchen cleaning,10
+Moderate,Face care,-16
+Moderate,Full home cleaning,-33
+Moderate,Men/kids haircut,-10
+Fine,AC Repair Service,-31
+Fine,Refrigerator Repair,22
+Moderate,Refrigerator Repair,-5
+Moderate,Carpenter,-29
+Moderate,Chimney Repair,-21
+Moderate,Home painting,25
+Moderate,AC Repair Service,45
+Fine,Kitchen cleaning,-20
+Fine,Chimney Repair,-44
+Fine,Washing Machine Repair,-39
+Fine,Kitchen cleaning,18
+Fine,Pest control,-15
+Fine,Refrigerator Repair,42
+Fine,Plumber,-8
+Fine,Electrician,-8
+Moderate,Home painting,10
+Moderate,Water Purifier Repair,40
+Fine,Home painting,-21
+Moderate,Massage,27
+Fine,Refrigerator Repair,-20
+Fine,Full home cleaning,14
+Fine,Massage,19
+Fine,Washing Machine Repair,28
+Extreme,Massage,-37
+Fine,AC Repair Service,-29
+Fine,AC Repair Service,-28
+Fine,Bathroom cleaning,27
+Fine,Full home cleaning,-38
+Extreme,Carpenter,-25
+Moderate,Face care,-48
+Fine,Full home cleaning,-19
+Fine,Electrician,13
+Fine,Refrigerator Repair,23
