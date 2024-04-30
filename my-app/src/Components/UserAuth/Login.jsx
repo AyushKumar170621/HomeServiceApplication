@@ -47,7 +47,7 @@ const Login = () => {
     <Fragment>
     <ToastContainer/>
     {loading?<Spinner/>:<Fragment>
-    <div className="container">
+    <div className="container-logsign">
       <form className="login-form" onSubmit={handleSubmit}>
         <h2>Login</h2>
         <div className="input-group">

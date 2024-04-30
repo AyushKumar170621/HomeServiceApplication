@@ -72,7 +72,7 @@ const Register = () => {
     <Fragment>
     <ToastContainer/>
     {loading?<Spinner/>:<Fragment>
-    <div className="container">
+    <div className="container-logsign">
       <form className="register-form" onSubmit={registerSubmit}>
         <h2>Register</h2>
         <div className="input-group">
@@ -90,6 +90,9 @@ const Register = () => {
         <div className="input-group">
           <label htmlFor="avatar">Avatar</label>
           <input type="file" id="avatar" name="avatar" accept="image/*" onChange={registerDataChange} />
+        </div>
+        <div className="input-group">
+            <img src={avatarPreview} alt="Avatar Preview" height={50} width={50} />
         </div>
         <div className="input-group">
           <label htmlFor="phone">Phone</label>

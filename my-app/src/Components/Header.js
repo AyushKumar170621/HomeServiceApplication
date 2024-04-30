@@ -1,8 +1,31 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useSelector,useDispatch } from 'react-redux';
+import { useEffect } from 'react';
+import { redirect } from 'react-router-dom';
+import { toast, ToastContainer } from 'react-toastify';
 
+import { logout,clearErrors } from '../action/userAction';
 function Header() {
+  const dispatch = useDispatch();
+  const {isAuthenticated, user ,error} = useSelector((state) => state.user);
+  useEffect( () => {
+    if(error)
+    {
+      toast.error(error,{
+        autoClose:2000,
+        position: toast.POSITION.TOP_CENTER,
+      });
+      dispatch(clearErrors());
+    }
+  },[dispatch,isAuthenticated,user,error]);
+  const logoutHandler = () => {
+    dispatch(logout());
+    return redirect("/login");
+  }
   return (
+    <>
+    <ToastContainer/>
     <header className="header_section">
       <div className="hero_area">
         <div className="header_top">
@@ -48,11 +71,21 @@ function Header() {
                     <Link className="nav-link" to="/services">Services</Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link" to="/login">Login</Link>
-                  </li>
-                  <li className="nav-item">
                     <Link className="nav-link" to="/contact">Contact Us</Link>
                   </li>
+                  {!isAuthenticated?<li className="nav-item">
+                    <Link className="nav-link" to="/login">Login</Link>
+                  </li>:
+                  <li className="nav-item dropdown">
+                    <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      {user.name}
+                    </a>
+                    <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <Link className="dropdown-item" to="/option1">Profile</Link>
+                      <Link className="dropdown-item" onClick={logoutHandler}>Logout</Link>
+                    </div>
+                  </li>
+                  }
                 </ul>
               </div>
             </nav>
@@ -60,6 +93,7 @@ function Header() {
         </div>
       </div>
     </header>
+    </>
   );
 }
 
