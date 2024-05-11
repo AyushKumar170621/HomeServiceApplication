@@ -11,15 +11,27 @@ import {
   userDetailsReducer,
 } from "./reducer/userReducer";
 
-
+import {
+  servicesReducer,
+  serviceDetailsReducer,
+  newReviewReducer,
+  newServiceReducer,
+serviceReducer
+} from "./reducer/serviceReducer";
 
 const reducer = combineReducers({
   user:userReducer,
   profile:profileReducer,
   forgotPassword:forgotPasswordReducer,
   allUsers: allUsersReducer,
-  userDetails: userDetailsReducer
+  userDetails: userDetailsReducer,
+  services: servicesReducer,
+  serviceDetails: serviceDetailsReducer,
+  newService: newServiceReducer,
+  service:serviceReducer,
+  newReview:newReviewReducer
 });
+
 
 let initialState = {
   cart: {
