@@ -19,11 +19,21 @@ import {
 serviceReducer
 } from "./reducer/serviceReducer";
 
+import { newBookingReducer, myBookingsReducer, allBookingsReducer, bookingReducer, bookingDetailsReducer } from "./reducer/bookingReducer";
+
+import { paymentReducer } from "./reducer/paymentReducer";
+
 const reducer = combineReducers({
   user:userReducer,
   profile:profileReducer,
   forgotPassword:forgotPasswordReducer,
   allUsers: allUsersReducer,
+  newBooking:newBookingReducer,
+  myBooking:myBookingsReducer,
+  allBookings:allBookingsReducer,
+  booking:bookingReducer,
+  serviceBook:paymentReducer,
+  bookingDetails:bookingDetailsReducer,
   userDetails: userDetailsReducer,
   services: servicesReducer,
   serviceDetails: serviceDetailsReducer,
@@ -34,12 +44,12 @@ const reducer = combineReducers({
 
 
 let initialState = {
-  cart: {
-    cartItems: localStorage.getItem("cartItems")
-      ? JSON.parse(localStorage.getItem("cartItems"))
+  serviceBook: {
+    serviceItems: localStorage.getItem("serviceItems")
+      ? JSON.parse(localStorage.getItem("serviceItems"))
       : [],
-    shippingInfo: localStorage.getItem("shippingInfo")
-      ? JSON.parse(localStorage.getItem("shippingInfo"))
+    bookingInfo: localStorage.getItem("bookingInfo")
+      ? JSON.parse(localStorage.getItem("bookingInfo"))
       : {},
   },
 };

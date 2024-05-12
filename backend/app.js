@@ -22,11 +22,11 @@ app.use(fileUpload());
 const service = require("./routes/serviceRoute");
 const user = require("./routes/userRoute");
 const booking = require("./routes/bookingRoute");
-// const payment = require("./routes/paymentRoute");
+const payment = require("./routes/paymentRoute");
 app.use("/api/v1",service);
 app.use("/api/v1",user);
 app.use("/api/v1",booking);
-// app.use("/api/v1",payment);
+app.use("/api/v1",payment);
 
 // app.get("*", (req, res) => {
 //   res.sendFile(path.resolve(__dirname, "../client/build/index.html"));

@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux';
 
 import { getServiceDetails } from '../action/serviceAction';
 import { Rating } from '@mui/material';
+import { addServiceItems } from '../action/paymentAction';
 
 const ServiceCard = ({ service }) => {
     const dispatch = useDispatch();
@@ -25,6 +26,10 @@ const ServiceCard = ({ service }) => {
         dispatch(getServiceDetails(service._id));
     };
 
+    const handleBook = () => {
+        dispatch(addServiceItems(service._id))
+    }
+
     return (
         <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
             <div className="store-item position-relative text-center">
@@ -41,6 +46,12 @@ const ServiceCard = ({ service }) => {
                             More Detail <i className="fa fa-arrow-right ms-2"></i>
                         </button>
                     </Link>
+                    <Link to = {'/product/locationinfo'}>
+                    <button onClick={handleBook} className='btn btn-primary rounded-pill py-2 px-4 m-2'>
+                        Book Now
+                    </button>
+                    </Link>
+                    
                    
                 </div>
             </div>
