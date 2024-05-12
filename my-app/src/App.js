@@ -12,7 +12,7 @@ import Login from './Components/UserAuth/Login'
 import Register from './Components/UserAuth/Register';
 import Service from './Components/Services';
 import AddService from './Admin/Addservice'
-import AllServices from './Admin/Allservices/Allservice';
+import AllServices from './Admin/AllServices';
 
 function App() {
   const location = useLocation();
@@ -37,12 +37,12 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/admin/addservice" element={<AddService/>}/>
-        <Route path="/admin/products" element={<AllServices/>}/>
+        <Route path="/admin/allservice" element={<AllServices/>}/>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services />} />
+        <Route path="/services" element={<Service />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/product" element={<Service />} />
+        
       </Routes>
       {/* Conditionally render Footer */}
       {showHeaderFooter && <Footer />}
