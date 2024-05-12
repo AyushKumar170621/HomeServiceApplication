@@ -11,6 +11,11 @@ import Footer from './Components/Footer';
 import Login from './Components/UserAuth/Login'
 import Register from './Components/UserAuth/Register';
 import Service from './Components/Services';
+import AddService from './Admin/Addservice';
+import Payment from './Components/Booking/Payment';
+import LocationInfo from './Components/Booking/LocationInfo';
+import AllServices from './Admin/Allservices/Allservice';
+import PaymentSuccessfull from './Components/Booking/PaymentSuccessfull';
 import AddService from './Admin/Addservice'
 import AllServices from './Admin/AllServices';
 
@@ -40,8 +45,13 @@ function App() {
         <Route path="/admin/allservice" element={<AllServices/>}/>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/product/locationinfo" element={<LocationInfo/>} />
+        <Route path="/service/payment" element={<Payment/>} />
         <Route path="/services" element={<Service />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/product" element={<Service />} />
+        <Route path="/paymentSuccessfull" element={<PaymentSuccessfull />} />
         
       </Routes>
       {/* Conditionally render Footer */}

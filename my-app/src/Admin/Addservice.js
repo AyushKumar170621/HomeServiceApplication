@@ -14,7 +14,6 @@ const AddService = () => {
     const [price, setPrice] = useState(0);
     const [description, setDescription] = useState("");
     const [category, setCategory] = useState("");
-    const [stock, setStock] = useState(0);
     const [images, setImages] = useState([]);
     const [imagesPreview, setImagesPreview] = useState([]);
 
@@ -48,7 +47,6 @@ const AddService = () => {
         myForm.set("price", price);
         myForm.set("description", description);
         myForm.set("category", category);
-        myForm.set("stock", stock);
 
         images.forEach((image) => {
             myForm.append("images", image);
@@ -117,10 +115,6 @@ const AddService = () => {
                                     &#x20b9;
                                 </div>
                                 <input type="number" onChange={(e) => { setPrice(e.target.value) }} className="form-control" aria-label="Amount (to the nearest rupee)" />
-                            </div>
-                            <label htmlFor="price" className="form-label">Stock</label>
-                            <div className="input-group mb-3">
-                                <input type="number" onChange={(e) => { setStock(e.target.value) }} className="form-control" aria-label="Amount (to the nearest rupee)" />
                             </div>
                             <center>
                                 <button className="btn-primary btn-lg m-2" type="submit" disabled={loading}>{loading ? 'Submitting...' : 'Submit'}</button>

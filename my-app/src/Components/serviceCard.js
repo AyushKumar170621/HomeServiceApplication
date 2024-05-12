@@ -4,6 +4,8 @@ import { useDispatch } from 'react-redux';
 import { Rating } from '@mui/material';
 
 import { getServiceDetails } from '../action/serviceAction';
+import { Rating } from '@mui/material';
+import { addServiceItems } from '../action/paymentAction';
 
 const ServiceCard = ({ service }) => {
     const dispatch = useDispatch();
@@ -23,6 +25,10 @@ const ServiceCard = ({ service }) => {
         dispatch(getServiceDetails(service._id));
     };
 
+    const handleBook = () => {
+        dispatch(addServiceItems(service._id))
+    }
+
     return (
         <div className="col-lg-4 col-md-6 mx-auto">
             <div className="box">
@@ -34,11 +40,20 @@ const ServiceCard = ({ service }) => {
                     <Rating {...options} />
                     <h4 className="text-primary">{'₹' + service.price}</h4>
                     <p>{truncatedDescription}</p>
-                    <div className="btn-box">
-                        <Link to={`/service/${service._id}`}>
-                            <button onClick={handleClick}>More Detail <i className="fa fa-arrow-right ms-2"></i></button>
-                        </Link>
-                    </div>
+                </div>
+                <div className="store-overlay">
+                    <Link to={`/service/${service._id}`}>
+                        <button onClick={handleClick} className="btn btn-primary rounded-pill py-2 px-4 m-2">
+                            More Detail <i className="fa fa-arrow-right ms-2"></i>
+                        </button>
+                    </Link>
+                    <Link to = {'/product/locationinfo'}>
+                    <button onClick={handleBook} className='btn btn-primary rounded-pill py-2 px-4 m-2'>
+                        Book Now
+                    </button>
+                    </Link>
+                    
+                   
                 </div>
             </div>
         </div>

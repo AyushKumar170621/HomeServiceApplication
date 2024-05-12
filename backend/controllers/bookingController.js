@@ -7,7 +7,7 @@ const catchAsyncErrors = require("../middleware/catchAsyncErrors");
 
 //create new errors
 exports.newBooking = catchAsyncErrors( async(req,res,next) =>{
-    const {locationInfo,serviceItems,paymentInfo,servicePrice,taxPrice,serviceDate,totalPrice}  = req.body;
+    const {locationInfo,serviceItems,paymentInfo,servicePrice,taxPrice,serviceDate=Date.now()+2*24*60*60*1000,totalPrice}  = req.body;
     const booking = await Booking.create({
         locationInfo,
         serviceItems,
