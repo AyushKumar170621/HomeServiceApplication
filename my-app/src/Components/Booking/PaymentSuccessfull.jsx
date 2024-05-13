@@ -25,22 +25,17 @@ const PaymentSuccessfull = () => {
   const bookingCreatedRef = useRef(false);
 
   useEffect(() => {
-    console.log("useEffect for booking creation called");
-
-    if (!bookingCreated && !error && !loading) {
-      console.log("Booking creation logic executed");
-
-      const booking = {
-        locationInfo: bookItems,
-        serviceItems: serviceItems,
-        paymentInfo: {
-          id: searchParams.get("reffrence"),
-          status: "successful",
-        },
-        servicePrice: serviceItems.price,
-        taxPrice: serviceItems.price * 0.18,
-        totalPrice: serviceItems.price + serviceItems.price * 0.18,
-      };
+    const booking = {
+      locationInfo: bookItems,
+      serviceItems: serviceItems,
+      paymentInfo: {
+        id: searchParams.get("reffrence"),
+        status: "successful",
+      },
+      servicePrice: serviceItems.price,
+      taxPrice: serviceItems.price * 0.18,
+      totalPrice: serviceItems.price + serviceItems.price * 0.18,
+    };
 
     // Check if the booking has already been created
     if (!error && !bookingCreatedRef.current && !loading) {
