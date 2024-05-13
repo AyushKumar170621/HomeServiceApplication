@@ -40,8 +40,8 @@ import {
         booking,
         config
       );
-  
       dispatch({ type: CREATE_BOOKING_SUCCESS, payload: data });
+      return data;
     } catch (error) {
       dispatch({
         type: CREATE_BOOKING_FAIL,

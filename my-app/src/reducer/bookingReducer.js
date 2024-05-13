@@ -22,7 +22,7 @@ import {
     DELETE_BOOKING_SUCCESS,
 } from "../constant/bookingConstants";
 
-export const newBookingReducer = (state = {loading:false}, action) => {
+export const newBookingReducer = (state = {}, action) => {
     switch (action.type) {
       case CREATE_BOOKING_REQUEST:
         return {
