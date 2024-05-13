@@ -14,36 +14,40 @@ const PaymentSuccessfull = () => {
 
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const { error,loading } = useSelector((state) => state.newBooking);
+  const { error, loading } = useSelector((state) => state.newBooking);
   const [searchParams] = useSearchParams();
   const [bookItems] = useState(JSON.parse(localStorage.getItem("bookingInfo")));
   const [serviceItems] = useState(JSON.parse(localStorage.getItem("serviceItems")));
   const [bookingCreated, setBookingCreated] = useState(false);
-  const [counter,setCounter] = useState(0);
+
+  console.log("PaymentSuccessfull rendered");
 
   useEffect(() => {
-    const booking = {
-      locationInfo: bookItems,
-      serviceItems: serviceItems,
-      paymentInfo: {
-        id: searchParams.get("reffrence"),
-        status: "successful",
-      },
-      servicePrice: serviceItems.price,
-      taxPrice: serviceItems.price * 0.18,
-      totalPrice: serviceItems.price + serviceItems.price * 0.18,
-    };
+    console.log("useEffect for booking creation called");
 
-    // Check if the booking has already been created
-    if (!error && !bookingCreated && !loading) {
+    if (!bookingCreated && !error && !loading) {
+      console.log("Booking creation logic executed");
+
+      const booking = {
+        locationInfo: bookItems,
+        serviceItems: serviceItems,
+        paymentInfo: {
+          id: searchParams.get("reffrence"),
+          status: "successful",
+        },
+        servicePrice: serviceItems.price,
+        taxPrice: serviceItems.price * 0.18,
+        totalPrice: serviceItems.price + serviceItems.price * 0.18,
+      };
+
       dispatch(createBooking(booking));
-      console.log("trigged");
-      setBookingCreated(true); // Set a flag to indicate that the booking has been created
+      setBookingCreated(true);
     }
-  }, [error,loading,bookingCreated,bookItems,serviceItems]);
+  }, []); // Empty dependency array ensures this effect runs only once on component mount
 
   useEffect(() => {
-    // Handle success or error
+    console.log("useEffect for handling success or error called");
+
     if (error) {
       window.alert(error);
       navigate("/");

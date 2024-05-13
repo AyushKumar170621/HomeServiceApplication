@@ -1,0 +1,46 @@
+/* Review.css */
+
+.review {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  Rating{
+    align-items: center;
+  }
+  .review h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    display: grid;
+    place-items: center;
+  }
+  
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+  }
+  button[type="submit"]{
+    align-items: center;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  

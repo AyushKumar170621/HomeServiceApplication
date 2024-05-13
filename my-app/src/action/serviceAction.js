@@ -109,7 +109,7 @@ export const createService = (serviceData) => async (dispatch) => {
 };
 
 // New Review
-export const newServiceReview = (reviewData) => async (dispatch) => {
+export const newReview = (reviewData) => async (dispatch) => {
   try {
     dispatch({ type: NEW_REVIEW_REQUEST });
     const config = {
