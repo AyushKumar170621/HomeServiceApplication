@@ -75,7 +75,7 @@ export const getServiceDetails = (id) => async (dispatch) => {
 export const getAdminServices = () => async (dispatch) => {
   try {
     dispatch({ type: ADMIN_SERVICE_REQUEST });
-    const { data } = await axios.get(`${baseURL}api/v1/admin/service`);
+    const { data } = await axios.get(`${baseURL}api/v1/admin/services`);
     dispatch({
       type: ADMIN_SERVICE_SUCCESS,
       payload: data.services,
@@ -109,7 +109,7 @@ export const createService = (serviceData) => async (dispatch) => {
 };
 
 // New Review
-export const newServiceReview = (reviewData) => async (dispatch) => {
+export const newReview = (reviewData) => async (dispatch) => {
   try {
     dispatch({ type: NEW_REVIEW_REQUEST });
     const config = {
@@ -135,7 +135,7 @@ export const updateService = (id, serviceData) => async (dispatch) => {
     const config = {
       headers: { "Content-Type": "application/json" },
     };
-    const { data } = await axios.put(`${baseURL}api/v1/admin/service/${id}`, serviceData, config);
+    const { data } = await axios.put(`${baseURL}api/v1/admin/services/${id}`, serviceData, config);
     dispatch({
       type: UPDATE_SERVICE_SUCCESS,
       payload: data.success,
@@ -152,7 +152,7 @@ export const updateService = (id, serviceData) => async (dispatch) => {
 export const deleteService = (id) => async (dispatch) => {
   try {
     dispatch({ type: DELETE_SERVICE_REQUEST });
-    const { data } = await axios.delete(`${baseURL}api/v1/admin/service/${id}`);
+    const { data } = await axios.delete(`${baseURL}api/v1/admin/services/${id}`);
     dispatch({
       type: DELETE_SERVICE_SUCCESS,
       payload: data.success,

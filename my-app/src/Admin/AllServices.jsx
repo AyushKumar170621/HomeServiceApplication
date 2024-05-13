@@ -2,10 +2,10 @@ import React, { Fragment, useEffect } from 'react';
 
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { getAdminServices, clearErrors } from "../../action/serviceAction"; // Import actions for services
-import ServiceCard from '../../Components/serviceCard'; // Assuming you have a ServiceCard component
-import { useDispatch, useSelector } from 'react-redux';
+import { getAdminServices, clearErrors } from "../action/serviceAction"; // Import actions for services
 
+import { useDispatch, useSelector } from 'react-redux';
+import ServiceCard from './serviceCard';
 const AllServices = () => {
     const dispatch = useDispatch();
     const { error, services } = useSelector((state) => state.services); // Change to services
