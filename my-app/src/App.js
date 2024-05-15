@@ -16,7 +16,8 @@ import Description from './Components/Description'
 import PaymentSuccessfull from './Components/Booking/PaymentSuccessfull';
 import AddService from './Admin/Addservice'
 import AllServices from './Admin/AllServices';
-
+import UpdateOrder from  "./Admin/Updatebooking";
+import Booking from "./Admin/Booking"
 function App() {
   const location = useLocation();
   const isAuthPage = location.pathname === '/login' || location.pathname === '/register';
@@ -48,9 +49,9 @@ function App() {
         <Route path="/service/payment" element={<Payment/>} />
         <Route path="/service/:id" element={<Description/>}/>
         <Route path="/contact" element={<Contact />} />
-      
+        <Route path="/admin/booking" element={<Booking/>}/>
         <Route path="/paymentSuccessfull" element={<PaymentSuccessfull />} />
-        
+        <Route path="/admin/booking/:id" element={<UpdateOrder/>}/>
       </Routes>
       {/* Conditionally render Footer */}
       {showHeaderFooter && <Footer />}
