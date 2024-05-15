@@ -14,7 +14,8 @@ import Payment from './Components/Booking/Payment';
 import LocationInfo from './Components/Booking/LocationInfo';
 import Description from './Components/Description'
 import PaymentSuccessfull from './Components/Booking/PaymentSuccessfull';
-import AddService from './Admin/Addservice'
+import AddService from './Admin/Addservice';
+import RegisterProvider from './Components/UserAuth/RegisterProvider';
 import AllServices from './Admin/AllServices';
 import UpdateOrder from  "./Admin/Updatebooking";
 import Booking from "./Admin/Booking"
@@ -40,6 +41,7 @@ function App() {
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/proregister" element={<RegisterProvider />} />
         <Route path="/admin/addservice" element={<AddService/>}/>
         <Route path="/admin/allservice" element={<AllServices/>}/>
         <Route path="/" element={<Home />} />

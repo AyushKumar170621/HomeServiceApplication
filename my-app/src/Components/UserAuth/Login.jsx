@@ -60,6 +60,7 @@ const Login = () => {
         </div>
         <button type="submit">Login</button>
         <Link to="/register">Register</Link>
+        <Link to="/proregister">Register as service provider</Link>
       </form>
     </div>
     </Fragment>}
