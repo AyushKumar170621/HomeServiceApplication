@@ -8,7 +8,7 @@ import {
 } from "../action/bookingAction"; // Import booking-related actions
 
 import { useNavigate } from "react-router-dom";
-import BookingsCard from "./Ordercard"; // Assuming you have a component for rendering individual booking details
+import BookingCard from "./BookingCard";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useSelector, useDispatch } from "react-redux";
@@ -46,7 +46,7 @@ const Bookings = () => {
         autoClose: 2000,
         position: toast.POSITION.TOP_CENTER,
         onClose: () => {
-          navigate("/admin/bookings");
+          navigate("/admin/booking");
         },
       });
     }
@@ -78,7 +78,7 @@ const Bookings = () => {
                       BOOKING {index + 1}
                     </div>
                     <div class="panel-body">
-                      <BookingsCard
+                      <BookingCard
                         booking={booking} // Pass booking details to BookingsCard component
                       />
                       <center>

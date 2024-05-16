@@ -52,29 +52,32 @@ export const newBookingReducer = (state = {}, action) => {
     }
   };
 
-  export const myBookingsReducer = (state = { bookings: [] }, action) => {
+  export const myBookingsReducer = (state = { loading: false,
+    bookings: [],
+    error: null }, action) => {
     switch (action.type) {
       case MY_BOOKINGS_REQUEST:
-        return {
-          loading: true,
-        };
-  
-      case MY_BOOKINGS_SUCCESS:
-        return {
-          loading: false,
-          bookings: action.payload,
-        };
-  
-      case MY_BOOKINGS_FAIL:
-        return {
-          loading: false,
-          error: action.payload,
-        };
-      case CLEAR_BOOKING_ERRORS:
-        return {
-          ...state,
-          error: null,
-        };
+      return {
+        ...state,
+        loading: true,
+      };
+    case MY_BOOKINGS_SUCCESS:
+      return {
+        ...state,
+        loading: false,
+        bookings: action.payload,
+      };
+    case MY_BOOKINGS_FAIL:
+      return {
+        ...state,
+        loading: false,
+        error: action.payload,
+      };
+    case CLEAR_BOOKING_ERRORS:
+      return {
+        ...state,
+        error: null,
+      };
   
       default:
         return state;

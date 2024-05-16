@@ -1,118 +1,80 @@
-import React, { Fragment, useEffect, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import React,{useEffect,useState,Fragment} from 'react'
+import { useDispatch,useSelector } from 'react-redux'
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import ServiceCard from './Ordercard';
-import { updateService, clearErrors, getServiceDetails } from '../action/serviceAction';
-import { UPDATE_SERVICE_RESET } from '../constant/serviceConstants';
-import { useParams, useNavigate } from 'react-router-dom';
-
-const Updatebooking = () => {
-    const { id } = useParams();
-    const { service, error, loading } = useSelector((state) => state.serviceDetails);
-    const { error: updateError, isUpdated } = useSelector((state) => state.service);
-    const [updatedService, setUpdatedService] = useState({});
-
-    const dispatch = useDispatch();
-    const navigate = useNavigate();
-
-    const updateServiceSubmitHandler = (e) => {
+import BookingCard from './BookingCard';
+import { updateBooking,clearBookingErrors,getBookingDetails } from '../action/bookingAction';
+import { UPDATE_BOOKING_RESET } from '../constant/bookingConstants';
+import { useParams,useNavigate } from 'react-router-dom'
+const UpdateBooking = () => {
+    const {id} = useParams();
+    const { booking, error, loading } = useSelector((state) => state.bookingDetails);
+    const { error: updateError, isUpdated } = useSelector((state) => state.booking);
+    const updateBookingSubmitHandler = (e) => {
         e.preventDefault();
-        dispatch(updateService(id, updatedService));
-    };
-
-    const handleInputChange = (e) => {
-        const { name, value } = e.target;
-        setUpdatedService({ ...updatedService, [name]: value });
-    };
-
+    
+        const myForm = new FormData();
+    
+        myForm.set("status", status);
+    
+        dispatch(updateBooking(id, myForm));
+      };
+      const [status, setStatus] = useState("");
+      const dispatch = useDispatch();
+      const navigate = useNavigate();
     useEffect(() => {
-        if (error) {
-            toast.error(error, {
-                position: toast.POSITION.TOP_CENTER,
-                autoClose: 2000,
-            });
-            dispatch(clearErrors());
-        }
-        if (updateError) {
-            toast.error(updateError, {
-                position: toast.POSITION.TOP_CENTER,
-                autoClose: 2000,
-            });
-            dispatch(clearErrors());
-        }
-        if (isUpdated) {
-            toast.success('Service Updated Successfully', {
-                position: toast.POSITION.TOP_CENTER,
-                autoClose: 2000,
-            });
-            dispatch({ type: UPDATE_SERVICE_RESET });
-            navigate('/admin/allservice');
-        }
-        dispatch(getServiceDetails(id));
-    }, [dispatch, error, id, isUpdated, updateError, navigate]);
+      if (error) {
+        toast.error(error,{
+          position: toast.POSITION.TOP_CENTER,
+            autoClose: 2000,
+          });
+        dispatch(clearBookingErrors());
+      }
+      if (updateError) {
+        toast.error(updateError,{
+          position: toast.POSITION.TOP_CENTER,
+            autoClose: 2000,
+          });
+        dispatch(clearBookingErrors());
+      }
+      if (isUpdated) {
+        toast.success("Booking Updated Successfully",{
+          position: toast.POSITION.TOP_CENTER,
+            autoClose: 2000,
+          });
+        dispatch({ type: UPDATE_BOOKING_RESET });
+      }
+      dispatch(getBookingDetails(id));
+    }, [dispatch, error, id, isUpdated, updateError,navigate]);
+  return (
+    <Fragment>
+        <ToastContainer/>
+        {loading ===undefined?(<h1>loading</h1>):(<Fragment>
+        {booking && (<div  className="panel .panel-primary border border-dark m-5 p-5">
+                <div class="panel-heading text-center text-primary m-5 p-5 fs-1">ORDER</div>
+                <div class="panel-body text-center">
+                  <BookingCard booking={booking}/>
+                  <p className='fs-4'><b>Payment Id :</b>{booking.paymentInfo.id}</p>
+                  <p className='fs-4'><b>Payment Status :</b>{booking.paymentInfo.status}</p>
+                  <form onSubmit={updateBookingSubmitHandler}>
+                  <select onChange={(e) => setStatus(e.target.value)} style={{width:'40%'}}>
+                      <option value="">Choose Status</option>
+                      {booking.bookingStatus === "Processing" && (
+                        <option value="Booking Accepted">Booking Accepted</option>
+                      )}
 
-    return (
-        <Fragment>
-            <ToastContainer />
-            {service && (
-                <div className="panel .panel-primary border border-dark m-5 p-5">
-                    <div className="panel-heading text-center text-primary m-5 p-5 fs-1">SERVICE</div>
-                    <div className="panel-body text-center">
-                        <ServiceCard service={service} />
-                        <form onSubmit={updateServiceSubmitHandler}>
-                            <div className="form-group">
-                                <label htmlFor="name">Name</label>
-                                <input
-                                    type="text"
-                                    className="form-control"
-                                    id="name"
-                                    name="name"
-                                    value={updatedService.name || ''}
-                                    onChange={handleInputChange}
-                                />
-                            </div>
-                            <div className="form-group">
-                                <label htmlFor="description">Description</label>
-                                <textarea
-                                    className="form-control"
-                                    id="description"
-                                    name="description"
-                                    value={updatedService.description || ''}
-                                    onChange={handleInputChange}
-                                />
-                            </div>
-                            <div className="form-group">
-                                <label htmlFor="price">Price</label>
-                                <input
-                                    type="number"
-                                    className="form-control"
-                                    id="price"
-                                    name="price"
-                                    value={updatedService.price || ''}
-                                    onChange={handleInputChange}
-                                />
-                            </div>
-                            <div className="form-group">
-                                <label htmlFor="availability">Availability</label>
-                                <input
-                                    type="text"
-                                    className="form-control"
-                                    id="availability"
-                                    name="availability"
-                                    value={updatedService.availability || ''}
-                                    onChange={handleInputChange}
-                                />
-                            </div>
-                            <button type="submit" className="btn btn-lg btn-primary m-2">
-                                Update
-                            </button>
-                        </form>
-                    </div>
+                      {booking.bookingStatus === "Booking Accepted" && (
+                        <option value="Service Completed">Service Completed</option>
+                      )}
+                    </select>
+                    <button type='submit' className='btn btn-lg btn-primary m-2'>Update</button>
+                  </form>
                 </div>
-            )}
-        </Fragment>
-    );
-};
+        </div>)}
+    </Fragment>)}
+    </Fragment>
+    
+  )
+}
 
-export default Updatebooking;
+export default UpdateBooking

@@ -17,7 +17,8 @@ import PaymentSuccessfull from './Components/Booking/PaymentSuccessfull';
 import AddService from './Admin/Addservice';
 import RegisterProvider from './Components/UserAuth/RegisterProvider';
 import AllServices from './Admin/AllServices';
-import UpdateOrder from  "./Admin/Updatebooking";
+import Updatebooking from './Admin/UpdateBooking';
+import UserBooking from './Components/UserAuth/UserBooking';
 import Booking from "./Admin/Booking"
 function App() {
   const location = useLocation();
@@ -47,13 +48,14 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Service />} />
+        <Route path="/bookings" element={<UserBooking/>} />
         <Route path="/product/locationinfo" element={<LocationInfo/>} />
         <Route path="/service/payment" element={<Payment/>} />
         <Route path="/service/:id" element={<Description/>}/>
         <Route path="/contact" element={<Contact />} />
         <Route path="/admin/booking" element={<Booking/>}/>
         <Route path="/paymentSuccessfull" element={<PaymentSuccessfull />} />
-        <Route path="/admin/booking/:id" element={<UpdateOrder/>}/>
+        <Route path="/admin/booking/:id" element={<Updatebooking/>}/>
       </Routes>
       {/* Conditionally render Footer */}
       {showHeaderFooter && <Footer />}

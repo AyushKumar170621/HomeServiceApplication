@@ -2,7 +2,8 @@ import React, { Fragment, useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 import ServiceReview from "./Review"; // Assuming you have a component for service reviews
-import { clearErrors, getServiceDetails } from "../action/serviceAction"; // Assuming you have service-related actions
+import { clearErrors, getServiceDetails } from "../action/serviceAction"; 
+import { addServiceItems } from '../action/paymentAction';
 import { Link, useParams } from "react-router-dom";
 
 import { Rating } from '@mui/material';
@@ -20,10 +21,9 @@ const ServiceDescription = () => {
     (state) => state.serviceDetails
   );
 
-  const addToCartHandler = () => {
-    // dispatch(addToCartService(service._id)); // Adjusted for service ID
-    window.alert("Service successfully added to cart");
-  }
+  const handleBook = () => {
+    dispatch(addServiceItems(service._id))
+}
 
   useEffect(() => {
     if (error) {
@@ -56,12 +56,11 @@ const ServiceDescription = () => {
                     <Rating value={service.ratings} readOnly={true} precision={0.5} /> {/* Assuming service ratings are available */}
                   </div>
                   <p className="mb-4">{service.description}</p>
-                  <Link
-                    className="btn btn-primary rounded-pill py-2 px-4 m-2"
-                    onClick={addToCartHandler}
-                  >
-                    Book Service <i className="fa fa-cart-plus ms-2"></i> {/* Adjusted for service booking */}
-                  </Link>
+                  <Link to = {'/product/locationinfo'}  >
+                    <button onClick={handleBook} className='btn btn-primary rounded-pill py-2 px-4 m-2'>
+                        Book Now
+                    </button>
+                    </Link>
                   <Link
                     onClick={handleToggle}
                     className="btn btn-primary rounded-pill py-2 px-4 m-2"

@@ -77,12 +77,13 @@ function Header() {
                     <Link className="nav-link" to="/login">Login</Link>
                   </li>:
                   <li className="nav-item dropdown">
-                    <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       {user.name}
                     </a>
                     <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                       <Link className="dropdown-item" to="/option1">Profile</Link>
                       <Link className="dropdown-item" onClick={logoutHandler}>Logout</Link>
+                      <Link className="dropdown-item" to="/bookings">My booking</Link>
                     </div>
                   </li>
                   }
