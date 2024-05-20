@@ -19,7 +19,7 @@ import {
 serviceReducer
 } from "./reducer/serviceReducer";
 
-import { newBookingReducer, myBookingsReducer, allBookingsReducer, bookingReducer, bookingDetailsReducer } from "./reducer/bookingReducer";
+import { newBookingReducer, myBookingsReducer, allBookingsReducer, bookingReducer, bookingDetailsReducer,setOtp,allProvidersBooking } from "./reducer/bookingReducer";
 
 import { paymentReducer } from "./reducer/paymentReducer";
 
@@ -35,6 +35,8 @@ const reducer = combineReducers({
   serviceBook:paymentReducer,
   bookingDetails:bookingDetailsReducer,
   userDetails: userDetailsReducer,
+  proBookings:allProvidersBooking,
+  otp:setOtp,
   services: servicesReducer,
   serviceDetails: serviceDetailsReducer,
   newService: newServiceReducer,

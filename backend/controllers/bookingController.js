@@ -53,6 +53,17 @@ exports.myBookings = catchAsyncErrors( async(req,res,next) =>{
 
 })
 
+//get logged provider booking 
+
+exports.logProBookings = catchAsyncErrors( async(req,res,next) =>{
+    const bookings = await Booking.find({provider:req.user._id});
+    res.status(200).json({
+        success:true,
+        bookings,
+    })
+
+})
+
 //get all booking --admin
 
 exports.getAllBookings = catchAsyncErrors( async(req,res,next) =>{
@@ -74,7 +85,9 @@ exports.getAllBookings = catchAsyncErrors( async(req,res,next) =>{
 exports.getAllProvidersBookings = catchAsyncErrors( async(req,res,next) =>{
     const user = await User.findById(req.user.id);
     // const bookings = await Booking.find({serviceItems: {$elemMatch: {category:user.category}}});
-    const bookings = await Booking.find({ 'serviceItems.category': user.category });
+    const bookings = await Booking.find({ 'serviceItems.category': user.category,
+     bookingStatus: "Processing"
+     });
     res.status(200).json({
         success:true,
         bookings,
@@ -122,13 +135,13 @@ exports.updateBookingProvider = catchAsyncErrors( async (req,res,next) =>{
     {
         return next (new ErrorHandler("You have already serviced this product",404));
     }
-    if(req.body.status === "Service Completed" && req.body.otp === booking.onetimepassword)
+    if(req.body.status === "Service Completed" && req.body.otp == booking.onetimepassword)
     {
-
         booking.bookingStatus=req.body.status;
     }
     else if(req.body.status != "Service Completed")
     {
+        booking.provider = req.user._id;
         booking.bookingStatus=req.body.status;
     }
     else

@@ -20,6 +20,8 @@ import AllServices from './Admin/AllServices';
 import Updatebooking from './Admin/UpdateBooking';
 import UserBooking from './Components/UserAuth/UserBooking';
 import Booking from "./Admin/Booking"
+import ProviderBooking from './Provider/ProviderBooking';
+import AcceptedBookings from './Provider/AcceptedBookings';
 function App() {
   const location = useLocation();
   const isAuthPage = location.pathname === '/login' || location.pathname === '/register';
@@ -54,6 +56,8 @@ function App() {
         <Route path="/service/:id" element={<Description/>}/>
         <Route path="/contact" element={<Contact />} />
         <Route path="/admin/booking" element={<Booking/>}/>
+        <Route path="/provider/booking" element={<ProviderBooking/>}/>
+        <Route path="/provider/mybooking" element={<AcceptedBookings/>}/>
         <Route path="/paymentSuccessfull" element={<PaymentSuccessfull />} />
         <Route path="/admin/booking/:id" element={<Updatebooking/>}/>
       </Routes>

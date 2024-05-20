@@ -20,6 +20,16 @@ import {
     DELETE_BOOKING_REQUEST,
     DELETE_BOOKING_RESET,
     DELETE_BOOKING_SUCCESS,
+    PROVIDER_BOOKINGS_REQUEST,
+    PROVIDER_BOOKINGS_SUCCESS,
+    PROVIDER_BOOKINGS_FAIL,
+    SET_OTP_FAILED,
+    SET_OTP_REQUEST,
+    SET_OTP_SUCCESS,
+    ACCEPTED_BOOKINGS_FAIL,
+    ACCEPTED_BOOKINGS_REQUEST,
+    ACCEPTED_BOOKINGS_SUCCESS,
+    SEND_OTP_RESET,
 } from "../constant/bookingConstants";
 
 export const newBookingReducer = (state = {}, action) => {
@@ -56,17 +66,20 @@ export const newBookingReducer = (state = {}, action) => {
     bookings: [],
     error: null }, action) => {
     switch (action.type) {
+      case ACCEPTED_BOOKINGS_REQUEST:
       case MY_BOOKINGS_REQUEST:
       return {
         ...state,
         loading: true,
       };
+    case ACCEPTED_BOOKINGS_SUCCESS:
     case MY_BOOKINGS_SUCCESS:
       return {
         ...state,
         loading: false,
         bookings: action.payload,
       };
+    case ACCEPTED_BOOKINGS_FAIL:
     case MY_BOOKINGS_FAIL:
       return {
         ...state,
@@ -84,6 +97,37 @@ export const newBookingReducer = (state = {}, action) => {
     }
   };
 
+
+  export const allProvidersBooking = (state = {proBookings : []}, action) => {
+    switch(action.type){
+      case PROVIDER_BOOKINGS_REQUEST:
+        return {
+          loading:true,
+        };
+      
+      case PROVIDER_BOOKINGS_SUCCESS:
+        return {
+          loading:false,
+          bookings:action.payload,
+        }
+      
+        case PROVIDER_BOOKINGS_FAIL:
+          return {
+            loading:false,
+            error:action.payload,
+          }
+        case CLEAR_BOOKING_ERRORS:
+          return {
+            ...state,
+            error: null,
+          };
+    
+        default:
+          return state;
+    }
+  }
+
+  
   export const allBookingsReducer = (state = { bookings: [] }, action) => {
     switch (action.type) {
       case ALL_BOOKINGS_REQUEST:
@@ -164,6 +208,38 @@ export const newBookingReducer = (state = {}, action) => {
         return state;
     }
   };
+
+  export const setOtp = (state = { booking: {} },action) => {
+    switch(action.type){
+      case SET_OTP_REQUEST:
+        return {
+          loading:true,
+        };
+      case SET_OTP_SUCCESS:
+        return {
+          loading:false,
+          otpSend:true,
+        }
+      case SET_OTP_FAILED:
+        return {
+          loading:false,
+          error:action.payload,
+        }
+      case SEND_OTP_RESET:
+        return {
+          ...state,
+          otpSend:false,
+        };
+        case CLEAR_BOOKING_ERRORS:
+          return {
+            ...state,
+            error: null,
+          };
+    
+        default:
+          return state;
+    }
+  }
   
   export const bookingDetailsReducer = (state = { booking: {} }, action) => {
     switch (action.type) {

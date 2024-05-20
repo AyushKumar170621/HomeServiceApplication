@@ -20,6 +20,15 @@ import {
     BOOKING_DETAILS_FAIL,
     BOOKING_DETAILS_REQUEST,
     BOOKING_DETAILS_SUCCESS,
+    SET_OTP_FAILED,
+    SET_OTP_REQUEST,
+    SET_OTP_SUCCESS,
+    ACCEPTED_BOOKINGS_FAIL,
+    ACCEPTED_BOOKINGS_REQUEST,
+    ACCEPTED_BOOKINGS_SUCCESS,
+    PROVIDER_BOOKINGS_FAIL,
+    PROVIDER_BOOKINGS_REQUEST,
+    PROVIDER_BOOKINGS_SUCCESS,
   } from "../constant/bookingConstants";
   import axios from "axios";
   import { baseURL } from "./base";
@@ -81,7 +90,82 @@ import {
       });
     }
   };
+
+  //Get Provider Booking
+  export const getAllProvidersBookings = () => async(dispatch) => {
+    try{
+      dispatch({type:PROVIDER_BOOKINGS_REQUEST});
+
+      const {data} = await axios.get(`${baseURL}api/v1/provider/bookings`);
+
+      dispatch({type: PROVIDER_BOOKINGS_SUCCESS,payload:data.bookings});
+    }
+    catch(error)
+    {
+      dispatch({
+        type:PROVIDER_BOOKINGS_FAIL,
+        payload:error.response.data.message,
+      })
+    }
+  }
+
+  //get proivder accepted booking
+
+  export const getAcceptedBookings = () => async(dispatch) => {
+    try{
+      dispatch({type:ACCEPTED_BOOKINGS_REQUEST});
+
+      const {data} = await axios.get(`${baseURL}api/v1/provider/mybookings`);
+
+      dispatch({type:ACCEPTED_BOOKINGS_SUCCESS,payload:data.bookings});
+    }
+    catch(error)
+    {
+      dispatch({
+        type:ACCEPTED_BOOKINGS_FAIL,
+        payload:error.response.data.message,
+      })
+    }
+  }
   
+  //send otp
+  export const setOneTimePassword = (id) => async (dispatch) => {
+    try{
+      dispatch({type:SET_OTP_REQUEST});
+
+      const {data} = await axios.get(`${baseURL}api/v1/provider/update/booking/${id}`);
+      dispatch({type:SET_OTP_SUCCESS,payload:data});
+    }
+    catch(error)
+    {
+      dispatch({
+        type:SET_OTP_FAILED,
+        payload:error.response.data.message,
+      })
+    }
+  }
+
+//update booking provider
+export const updateBookingProvider = (id,booking) => async(dispatch) =>{
+  try{
+    dispatch({type:UPDATE_BOOKING_REQUEST});
+    const config = {
+      headers: {
+        "Content-Type":"application/json",
+      },
+    };
+
+    const {data} = await axios.put(`${baseURL}api/v1/provider/update/booking/${id}`,booking,
+    config);
+    dispatch({ type: UPDATE_BOOKING_SUCCESS, payload: data.success });
+    } catch (error) {
+      dispatch({
+        type: UPDATE_BOOKING_FAIL,
+        payload: error.response.data.message,
+      });
+    }
+}
+
   // Update Booking
   export const updateBooking = (id, booking) => async (dispatch) => {
     try {

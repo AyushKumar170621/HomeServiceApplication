@@ -6,7 +6,7 @@ const BookingCard = ({item,status}) => {
     <div className="card mb-5 text-left bg-light" style={{maxWidth: '540px'}}>
       <div className="row g-0">
         <div className="col-md-7">
-          <img src={item.image} className="img-fluid rounded-start" alt="..." />
+          <img src={item.serviceItems.image} className="img-fluid rounded-start" alt="..." />
         </div>
         <div className="col-md-5">
           <div className="card-body bg-dark">

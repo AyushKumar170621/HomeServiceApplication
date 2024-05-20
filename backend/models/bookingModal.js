@@ -57,6 +57,10 @@ const bookingSchema = new mongoose.Schema({
         ref: "User",
         required: true,
     },
+    provider:{
+        type: mongoose.Schema.ObjectId,
+        ref: "User",
+    },
     paymentInfo:{
         id:{
             type:String,
