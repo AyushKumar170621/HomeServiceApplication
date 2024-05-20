@@ -1,11 +1,12 @@
 import React, { Fragment, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { myBookings, clearBookingErrors } from "../../action/bookingAction";
+import { myBookings, clearBookingErrors } from "../../../action/bookingAction";
 import { useSelector, useDispatch } from "react-redux";
-import { logout } from "../../action/userAction";
+import { logout } from "../../../action/userAction";
 import { toast, ToastContainer } from 'react-toastify';
 import BookingCard from "./BookingCard";
 import 'react-toastify/dist/ReactToastify.css';
+
 
 const UserBooking = () => {
   const dispatch = useDispatch();
@@ -34,7 +35,7 @@ const UserBooking = () => {
       ) : (
         <Fragment>
           <div className="row">
-            <div className="col-sm-8 bg-primary mx-auto">
+            <div className="col-sm-8 bg-secondary  mx-auto">
               <div
                 className="section-title text-center mx-auto wow fadeInUp"
                 data-wow-delay="0.1s"
