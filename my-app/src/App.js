@@ -19,19 +19,15 @@ import AddService from './Admin/Addservice';
 import RegisterProvider from './Components/UserAuth/RegisterProvider';
 import AllServices from './Admin/AllServices';
 import Updatebooking from './Admin/UpdateBooking';
-<<<<<<< HEAD
-import UserBooking from './Components/UserAuth/UserBooking';
 import Booking from "./Admin/Booking"
 import ProviderBooking from './Provider/ProviderBooking';
 import AcceptedBookings from './Provider/AcceptedBookings';
-=======
 import UserBooking from './Components/UserAuth/Userbooking/UserBooking';
-import Booking from "./Admin/Booking";
 import AdminProtectedRoute from './Components/Routes/AdminProtectedRoute';
 import ProtectedRoute from './Components/Routes/ProtectedRoute';
 import AdminNavbar from './Admin/Navbar/Navbar'; // Import the AdminNavbar component
 import AdminDashboard from './Admin/AdminDashboard';
->>>>>>> f15eea00fa7185de55003ca1abc1343935ea966a
+import ProviderProtectedRoute from './Components/Routes/ProviderProtectedRoute';
 function App() {
   const location = useLocation();
   const isAuthPage = location.pathname === '/login' || location.pathname === '/register';
@@ -62,13 +58,6 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-<<<<<<< HEAD
-        <Route path="/admin/booking" element={<Booking/>}/>
-        <Route path="/provider/booking" element={<ProviderBooking/>}/>
-        <Route path="/provider/mybooking" element={<AcceptedBookings/>}/>
-        <Route path="/paymentSuccessfull" element={<PaymentSuccessfull />} />
-        <Route path="/admin/booking/:id" element={<Updatebooking/>}/>
-=======
 
         {/* Protected routes for authenticated users */}
         <Route element={<ProtectedRoute isAuthenticated={isAuthenticated} />}>
@@ -80,6 +69,10 @@ function App() {
           <Route path="/service/:id" element={<Description />} />
         </Route>
 
+        <Route element={<ProviderProtectedRoute/>}>
+          <Route path="/provider/booking" element={<ProviderBooking/>}/>
+          <Route path="/provider/mybooking" element={<AcceptedBookings/>}/>
+        </Route>
         {/* Admin protected routes */}
         <Route element={<AdminProtectedRoute user={user} />}>
           <Route path="/admin/addservice" element={<AddService />} />
@@ -88,7 +81,6 @@ function App() {
           <Route path="/admin/booking/:id" element={<Updatebooking />} />
           <Route path="/admin/dashboard" element={<AdminDashboard />} />
         </Route>
->>>>>>> f15eea00fa7185de55003ca1abc1343935ea966a
       </Routes>
 
       {/* Conditionally render Footer */}
