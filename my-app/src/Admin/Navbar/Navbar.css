@@ -1,0 +1,24 @@
+.admin-navbar {
+    background-color: #333;
+    padding: 1em;
+  }
+  
+  .admin-navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+  }
+  
+  .admin-navbar li {
+    margin: 0;
+  }
+  
+  .admin-navbar a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .admin-navbar a:hover {
+    text-decoration: underline;
+  }
+  
