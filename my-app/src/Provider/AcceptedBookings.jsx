@@ -53,6 +53,7 @@ const AcceptedBookings = () => {
         autoClose: 2000,
         position: toast.POSITION.TOP_CENTER,
         onClose: () => {
+          setIsModalOpen(false);
           navigate("/provider/mybooking");
         },
       });

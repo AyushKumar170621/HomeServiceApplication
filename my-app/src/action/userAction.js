@@ -39,6 +39,9 @@ import {
     USER_DETAILS_FAIL,
     USER_DETAILS_REQUEST,
     USER_DETAILS_SUCCESS,
+    NEW_REVIEW_FAIL,
+    NEW_REVIEW_REQUEST,
+    NEW_REVIEW_SUCCESS
 } from "../constant/userConstant";
 import { baseURL } from "./base";
 import axios from "axios";
@@ -268,3 +271,24 @@ export const getUserDetails = (id) => async (dispatch) => {
 export const clearErrors = () => async (dispatch) => {
     dispatch({ type: CLEAR_ERRORS });
   };
+
+
+// New Review
+export const newProviderReview = (reviewData) => async (dispatch) => {
+  try {
+    dispatch({ type: NEW_REVIEW_REQUEST });
+    const config = {
+      headers: { "Content-Type": "application/json" },
+    };
+    const { data } = await axios.put(`${baseURL}api/v1/provider/review`, reviewData, config);
+    dispatch({
+      type: NEW_REVIEW_SUCCESS,
+      payload: data.success,
+    });
+  } catch (error) {
+    dispatch({
+      type: NEW_REVIEW_FAIL,
+      payload: error.response.data.message,
+    });
+  }
+};

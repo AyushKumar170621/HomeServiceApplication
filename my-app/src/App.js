@@ -28,6 +28,8 @@ import ProtectedRoute from './Components/Routes/ProtectedRoute';
 import AdminNavbar from './Admin/Navbar/Navbar'; // Import the AdminNavbar component
 import AdminDashboard from './Admin/AdminDashboard';
 import ProviderProtectedRoute from './Components/Routes/ProviderProtectedRoute';
+import Chatbot from "./Components/ExtraComponent/Chatbot";
+
 function App() {
   const location = useLocation();
   const isAuthPage = location.pathname === '/login' || location.pathname === '/register';
@@ -44,11 +46,11 @@ function App() {
   // Determine if the header and footer should be displayed
   const showHeaderFooter = !isAuthPage;
   const isAdmin = user && user.role === 'admin'; // Check if the user is an admin
-
+  const isProvider = user && user.role === "provider";
   return (
     <div className="App">
       {/* Conditionally render AdminNavbar or Header */}
-      {isAdmin ? <AdminNavbar /> : (showHeaderFooter && <Header />)}
+      {isAdmin ? <AdminNavbar /> : (showHeaderFooter && <Header isProvider = {isProvider}/>)}
 
       <Routes>
         <Route path="/login" element={<Login />} />
@@ -58,10 +60,10 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-
+        <Route path="/faq" element={<Chatbot/>}/>
         {/* Protected routes for authenticated users */}
+        <Route path="/paymentSuccessfull" element={<PaymentSuccessfull />} />
         <Route element={<ProtectedRoute isAuthenticated={isAuthenticated} />}>
-          <Route path="/paymentSuccessfull" element={<PaymentSuccessfull />} />
           <Route path="/services" element={<Service />} />
           <Route path="/bookings" element={<UserBooking />} />
           <Route path="/product/locationinfo" element={<LocationInfo />} />

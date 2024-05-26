@@ -9,6 +9,7 @@ import {
   forgotPasswordReducer,
   allUsersReducer,
   userDetailsReducer,
+  newProviderReviewReducer,
 } from "./reducer/userReducer";
 
 import {
@@ -23,6 +24,8 @@ import { newBookingReducer, myBookingsReducer, allBookingsReducer, bookingReduce
 
 import { paymentReducer } from "./reducer/paymentReducer";
 
+import { chatReducer } from "./reducer/mlReducer";
+
 const reducer = combineReducers({
   user:userReducer,
   profile:profileReducer,
@@ -31,6 +34,7 @@ const reducer = combineReducers({
   newBooking:newBookingReducer,
   myBooking:myBookingsReducer,
   allBookings:allBookingsReducer,
+  chat:chatReducer,
   booking:bookingReducer,
   serviceBook:paymentReducer,
   bookingDetails:bookingDetailsReducer,
@@ -41,7 +45,8 @@ const reducer = combineReducers({
   serviceDetails: serviceDetailsReducer,
   newService: newServiceReducer,
   service:serviceReducer,
-  newReview:newReviewReducer
+  newReview:newReviewReducer,
+  proReview:newProviderReviewReducer,
 });
 
 

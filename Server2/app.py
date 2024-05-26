@@ -1,16 +1,22 @@
 import json
 from textblob import TextBlob
-data_file = open('intents.json').read()
-intents = json.loads(data_file)
 from flask import Flask, request, jsonify
 import numpy as np
 from keras.models import load_model
 import nltk
 from nltk.stem import WordNetLemmatizer
-import json
 import pickle
+from flask_cors import CORS
 
 app = Flask(__name__)
+cors_config = {
+    "origins": ["http://localhost:3000","http://localhost:4000"],  # The origin you want to allow
+    "supports_credentials": True
+}
+
+CORS(app, resources={
+    r"/*": cors_config
+})
 
 # Load pre-trained model and other necessary files
 model = load_model('chatbot_model.h5')
@@ -38,7 +44,7 @@ def bow(sentence, words, show_details=True):
                 bag[i] = 1
                 if show_details:
                     print(f"found in bag: {w}")
-    return(np.array(bag))
+    return np.array(bag)
 
 # Predict the intent of the user's message
 def predict_class(sentence, model):
@@ -67,21 +73,23 @@ def chat():
     except Exception as e:
         return jsonify({"error": str(e)})
 
-@app.route('/sentiscore',methods=['POST'])
+@app.route('/sentiscore', methods=['POST'])
 def analyze_sentiment():
     # Classify the sentiment as positive, negative, or neutral
     try:
         data = request.get_json()
         review = data['review']
+        print(review)
         analysis = TextBlob(review)
         if analysis.sentiment.polarity > 0:
-            result= 'Positive'
+            result = 'Positive'
         elif analysis.sentiment.polarity < 0:
-            result= 'Negative'
+            result = 'Negative'
         else:
-            result= 'Neutral'
+            result = 'Neutral'
         return jsonify({"reply": result})
     except Exception as e:
         return jsonify({"error": str(e)})
+
 if __name__ == '__main__':
     app.run(debug=True)
