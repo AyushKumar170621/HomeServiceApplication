@@ -27,12 +27,12 @@
         },
         {
                 "tag": "give review to services",
-                "patterns": ["i want to give reviews", "service review "],
+                "patterns": ["i want to give reviews", "service review ","Want to give feedbacks"],
                 "responses": ["Sure! www.review.com."],
                 "context": [""]
          },
          {"tag": "service status",
-         "patterns": ["in how much time my service will be completed ", "service status",  "latest update of services" ],
+         "patterns": ["in how much time my service will be completed ", "service status",  "latest update of services","Where is the service provider" ],
          "responses": ["www.serviceupdates.com"],
          "context": [""]
         },
@@ -75,6 +75,11 @@
          "patterns": ["Do you offer any membership or loyalty programs?", "Are there benefits to being a regular customer?" ],
          "responses": ["Yes, we offer membership and loyalty programs for our regular customers. Enjoy exclusive benefits, discounts, and priority service as a valued member of our community."],
          "context": [""]
-        }
+        },
+        {"tag": "change address",
+        "patterns": ["How to change booking address","Update my booking address"],
+        "responses": ["Address can be changed before booking after booking address change is not allowed you can contact provider directly for address updates"],
+        "context": [""]
+       }
     ]
 }

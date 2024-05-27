@@ -1,0 +1,125 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  .left-pannel {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .greeting h1 {
+    color: #17a2b8;
+    font-size: 1.5rem;
+  }
+  
+  .nav-links {
+    margin-top: 20px;
+  }
+  
+  .nav-links a {
+    display: block;
+    padding: 10px;
+    color: #adb5bd;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    background-color: #495057;
+    color: #fff;
+  }
+  
+  .profile-page {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .profile-content {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-info, .profile-edit {
+    width: 100%;
+  }
+  
+  .profile-info h1, .profile-edit h1 {
+    font-size: 1.8rem;
+    color: #007bff;
+  }
+  
+  .edit-btn {
+    background-color: #17a2b8;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    float: right;
+  }
+  
+  .edit-btn:hover {
+    background-color: #138496;
+  }
+  
+  .profile-details {
+    margin-top: 20px;
+  }
+  
+  .profile-details img.profile-pic, .profile-edit img.avatar-preview {
+    display: block;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  
+  .profile-item {
+    margin-bottom: 20px;
+  }
+  
+  .profile-item label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .profile-item input[type="text"], .profile-item input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .profile-item input[type="file"] {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .submit-btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .submit-btn:hover {
+    background-color: #45a049;
+  }
+  
