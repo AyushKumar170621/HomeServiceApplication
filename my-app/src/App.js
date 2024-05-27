@@ -28,6 +28,10 @@ import ProtectedRoute from './Components/Routes/ProtectedRoute';
 import AdminNavbar from './Admin/Navbar/Navbar'; // Import the AdminNavbar component
 import AdminDashboard from './Admin/AdminDashboard';
 import ProviderProtectedRoute from './Components/Routes/ProviderProtectedRoute';
+import ForgotPassword from './Components/UserAuth/ForgotPassword'
+import ResetPassword from './Components/UserAuth/ResetPassword';
+import Profile from './Components/UserAuth/Profile'
+import PasswordUpdate from './Components/UserAuth/PasswordUpdate';
 import Chatbot from "./Components/ExtraComponent/Chatbot";
 
 function App() {
@@ -56,7 +60,8 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/proregister" element={<RegisterProvider />} />
-
+        <Route  path="/password/forgot" element={<ForgotPassword/>} />
+        <Route path="/password/reset/:token" element={<ResetPassword/>} />
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
@@ -69,11 +74,14 @@ function App() {
           <Route path="/product/locationinfo" element={<LocationInfo />} />
           <Route path="/service/payment" element={<Payment />} />
           <Route path="/service/:id" element={<Description />} />
+          <Route path="/profile" element={<Profile/>}/>
+          <Route path="/profile/update" element={<PasswordUpdate/>}/>
         </Route>
 
         <Route element={<ProviderProtectedRoute/>}>
           <Route path="/provider/booking" element={<ProviderBooking/>}/>
           <Route path="/provider/mybooking" element={<AcceptedBookings/>}/>
+          <Route path="/profile" element={<Profile/>}/>
         </Route>
         {/* Admin protected routes */}
         <Route element={<AdminProtectedRoute user={user} />}>
@@ -82,6 +90,7 @@ function App() {
           <Route path="/admin/booking" element={<Booking />} />
           <Route path="/admin/booking/:id" element={<Updatebooking />} />
           <Route path="/admin/dashboard" element={<AdminDashboard />} />
+          <Route path="/profile" element={<Profile/>}/>
         </Route>
       </Routes>
 

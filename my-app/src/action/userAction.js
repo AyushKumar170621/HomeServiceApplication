@@ -179,11 +179,13 @@ export const getAllUsers = () => async (dispatch) => {
 // Forgot Password
 export const forgotPassword = (email) => async (dispatch) => {
   try {
+    console.log("Calling action email",email);
+    email=email.trim();
     dispatch({ type: FORGOT_PASSWORD_REQUEST });
 
     const config = { headers: { "Content-Type": "application/json" } };
 
-    const { data } = await axios.post(`${baseURL}api/v1/password/forgot`, email, config);
+    const { data } = await axios.post(`${baseURL}api/v1/password/forgot`,{email}, config);
 
     dispatch({ type: FORGOT_PASSWORD_SUCCESS, payload: data.message });
   } catch (error) {

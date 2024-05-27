@@ -95,7 +95,7 @@ function Header({isProvider}) {
                       {user.name}
                     </a>
                     <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <Link className="dropdown-item" to="/option1">Profile</Link>
+                      <Link className="dropdown-item" to="/profile">Profile</Link>
                       <Link className="dropdown-item" onClick={logoutHandler}>Logout</Link>
                       {!isProvider && <Link className="dropdown-item" to="/bookings">My booking</Link>}
                     </div>
