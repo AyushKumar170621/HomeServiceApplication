@@ -35,7 +35,7 @@ const UserBooking = () => {
       ) : (
         <Fragment>
           <div className="row">
-            <div className="col-sm-8 bg-secondary  mx-auto">
+            <div className="col-sm-10 bg-secondary  mx-auto">
               <div
                 className="section-title text-center mx-auto wow fadeInUp"
                 data-wow-delay="0.1s"

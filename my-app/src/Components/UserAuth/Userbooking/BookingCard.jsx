@@ -1,25 +1,33 @@
-import React, { useState } from "react";
-
+import React, { useState} from "react";
+import ProviderFeedback from "./ProviderFeedback";
 const BookingCard = ({ item, status }) => {
   const [showDetails, setShowDetails] = useState(false);
 
+  const [isOpen, setIsOpen] = useState(false);
+  const handleOpenToggle = () => {
+    setIsOpen(!isOpen);
+  }
   const handleToggle = () => {
     setShowDetails(!showDetails);
   };
 
   return (
     <div className="d-flex justify-content-center">
-      <div className="card mb-5 text-left bg-light" style={{ maxWidth: '540px' }}>
-        <div className="row g-0">
-          <div className="col-md-7">
+      <div className="card mb-5 text-left bg-light" style={{ maxWidth: '700px' }}>
+        <div className="row ">
+          <div className="col-md-6">
             <img src={item.serviceItems.image} className="img-fluid rounded-start" alt={item.serviceItems.name} />
           </div>
-          <div className="col-md-5">
-            <div className="card-body bg-dark">
+          <div className="col-md-6 bg-dark ">
+            <div className="card-body">
               <h5 className="card-title text-primary text-center">{item.serviceItems.name}</h5>
               <p className="card-text text-light">
                 <b>Total Price:</b> ${item.totalPrice}
               </p>
+              {status == "Service Completed"  && <button className="btn btn-primary mx-1" onClick={handleOpenToggle}>
+                {isOpen ? "Cancel" : "Provide feedback"}
+              </button>}
+
               <button className="btn btn-primary" onClick={handleToggle}>
                 {showDetails ? "Hide Details" : "Show Details"}
               </button>
@@ -57,6 +65,8 @@ const BookingCard = ({ item, status }) => {
                   </p>
                 </div>
               )}
+              
+              <ProviderFeedback providerId={item.provider} open={isOpen} setVar={setIsOpen}/>
             </div>
           </div>
         </div>

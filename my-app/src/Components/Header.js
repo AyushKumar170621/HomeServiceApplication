@@ -6,7 +6,7 @@ import { redirect } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 
 import { logout,clearErrors } from '../action/userAction';
-function Header() {
+function Header({isProvider}) {
   const dispatch = useDispatch();
   const {isAuthenticated, user ,error} = useSelector((state) => state.user);
   useEffect( () => {
@@ -67,12 +67,26 @@ function Header() {
                   <li className="nav-item">
                     <Link className="nav-link" to="/about"> About</Link>
                   </li>
+                  {isProvider && 
+                  <>
+                  <li className="nav-item">
+                    <Link className="nav-link" to="/provider/booking">Bookings</Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link" to="/provider/mybooking">My Bookings</Link>
+                  </li>
+                  </>
+                  }
+                  {!isProvider &&
+                  <>
                   <li className="nav-item">
                     <Link className="nav-link" to="/services">Services</Link>
                   </li>
                   <li className="nav-item">
                     <Link className="nav-link" to="/contact">Contact Us</Link>
                   </li>
+                  </>
+                  }
                   {!isAuthenticated?<li className="nav-item">
                     <Link className="nav-link" to="/login">Login</Link>
                   </li>:
@@ -83,7 +97,7 @@ function Header() {
                     <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                       <Link className="dropdown-item" to="/profile">Profile</Link>
                       <Link className="dropdown-item" onClick={logoutHandler}>Logout</Link>
-                      <Link className="dropdown-item" to="/bookings">My booking</Link>
+                      {!isProvider && <Link className="dropdown-item" to="/bookings">My booking</Link>}
                     </div>
                   </li>
                   }

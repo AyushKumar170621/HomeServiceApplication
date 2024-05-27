@@ -39,6 +39,10 @@ serviceSchema = new mongoose.Schema({
         type:Number,
         default:0
     },
+    posCount:{
+        type:Number,
+        default:0,
+    },
     reviews:[
         {
             user:{
@@ -57,6 +61,10 @@ serviceSchema = new mongoose.Schema({
             comment:{
                 type:String,
                 required:true
+            },
+            isPose:{
+                type:Boolean,
+                default:false,
             }
         }
     ]

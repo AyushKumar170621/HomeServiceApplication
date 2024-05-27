@@ -3,6 +3,7 @@ const ErrorHandler = require("../utils/errorHandler");
 const catchAsyncErrors = require("../middleware/catchAsyncErrors");
 const ApiFeatures = require("../utils/apiFeatures");
 const cloudinary = require("cloudinary");
+const axios = require("axios");
 
 exports.createService = catchAsyncErrors(async (req, res, next) => {
     let images = [];
@@ -153,6 +154,16 @@ exports.createServiceReview = catchAsyncErrors(async (req, res, next) => {
     rating: Number(rating),
     comment,
   };
+  
+  
+  let result;
+  try {
+    const response = await axios.post("http://127.0.0.1:5000/sentiscore", { review: comment });
+    result = response.data.reply;
+  } catch (error) {
+    console.error("Error during axios request:", error);
+    return next(new Error("Failed to analyze sentiment"));
+  }
 
   const service= await Service.findById(serviceId);
   const isReviewed = service.reviews.find(
@@ -164,12 +175,27 @@ exports.createServiceReview = catchAsyncErrors(async (req, res, next) => {
         rev.rating = rating;
         rev.comment = comment;
       }
+      if(rev.isPos && result == "Negative")
+        {
+          rev.isPos = false;
+          service.posCount -=1;
+        }
+      else if(!rev.isPos && result == "Positive")
+        {
+          rev.isPos = true;
+          service.posCount +=1;
+        }
     });
   } else {
+    if(result == "Positive")
+      {
+        service.posCount+=1;
+        review.isPos=true;
+      }
     service.reviews.push(review);
     service.numOfReviews = service.reviews.length;
   }
-
+  console.log(review);
   let avg = 0;
   service.reviews.forEach((rev) => {
     avg += Number(rev.rating);

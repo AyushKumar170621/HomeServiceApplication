@@ -48,6 +48,14 @@ const userSchema = new mongoose.Schema({
         type:Number,
         default:0,
     },
+    posCount:{
+        type:Number,
+        default:0
+    },
+    numOfReviews:{
+        type:Number,
+        default:0
+    },
     reviews:[
         {
             user:{
@@ -66,7 +74,11 @@ const userSchema = new mongoose.Schema({
             comment:{
                 type:String,
                 required:true
-            }
+            },
+            isPos:{
+                type:Boolean,
+                default:false,
+            },
         }
     ],
     city:{

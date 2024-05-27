@@ -3,6 +3,7 @@ const ErrorHandler = require("../utils/errorHandler");
 const catchAsyncErrors = require("../middleware/catchAsyncErrors");
 const ApiFeatures = require("../utils/apiFeatures");
 const cloudinary = require("cloudinary");
+const axios = require("axios");
 const sendToken = require("../utils/jwtToken");
 const sendEmail = require("../utils/sendEmail.js");
 const crypto = require("crypto");
@@ -302,7 +303,15 @@ exports.createProviderReview = catchAsyncErrors(async (req, res, next) => {
     rating: Number(rating),
     comment,
   };
-  console.log(review);
+  let result;
+  try {
+    const response = await axios.post("http://127.0.0.1:5000/sentiscore", { review: comment });
+    result = response.data.reply;
+  } catch (error) {
+    console.error("Error during axios request:", error);
+    return next(new Error("Failed to analyze sentiment"));
+  }
+
   const provider= await User.findById(providerId);
   const isReviewed = provider.reviews.find(
     (rev) => rev.user.toString() === req.user._id.toString()
@@ -313,9 +322,25 @@ exports.createProviderReview = catchAsyncErrors(async (req, res, next) => {
         rev.rating = rating;
         rev.comment = comment;
       }
+      if(rev.isPos && result == "Negative")
+        {
+          rev.isPos = false;
+          provider.posCount -=1;
+        }
+      else if(!rev.isPos && result == "Positive")
+        {
+          rev.isPos = true;
+          provider.posCount +=1;
+        }
     });
   } else {
+    if(result == "Positive")
+      {
+        provider.posCount+=1;
+        review.isPos=true;
+      }
     provider.reviews.push(review);
+    provider.numOfReviews = provider.reviews.length;
   }
 
   let avg = 0;
