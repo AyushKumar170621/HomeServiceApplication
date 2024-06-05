@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react';
-import { Fragment } from 'react';
+// Login.js
+import React, { useState, useEffect, Fragment } from 'react';
 import { login, clearErrors } from "../../action/userAction";
 import { Link, useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Spinner from './Loading';
 import { useDispatch, useSelector } from "react-redux";
-import './styles.css';
+import './login.css';
 
 const Login = () => {
   const dispatch = useDispatch();
@@ -46,7 +46,7 @@ const Login = () => {
   }, [dispatch, error, isAuthenticated, navigate]);
 
   const handleForgotPassword = () => {
-    navigate("/password/forgot"); // Navigate to forgot password page
+    navigate("/password/forgot");
   };
 
   return (
@@ -65,9 +65,11 @@ const Login = () => {
                 <label htmlFor="password">Password</label>
                 <input type="password" id="password" onChange={handleChange} name="password" required />
               </div>
-              <button type="submit">Login</button>
-              <Link to="/register">Register</Link>
-              <Link to="/proregister">Register as service provider</Link>
+              <button type="submit" className="login-button">Login</button>
+              <div className="links">
+                <Link to="/register" className="link">Register</Link>
+                <Link to="/proregister" className="link">Register as Service Provider</Link>
+              </div>
               <button type="button" className="forgot-password-btn" onClick={handleForgotPassword}>
                 Forgot Password?
               </button>

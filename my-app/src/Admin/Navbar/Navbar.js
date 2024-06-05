@@ -29,7 +29,7 @@ const AdminNavbar = () => {
             <Link className="nav-link" to="/admin/booking">Bookings</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/admin/booking/:id">Update Booking</Link>
+            <Link className="nav-link" to="/admin/users">Users</Link>
           </li>
           <li className="nav-item">
             <button className="nav-link btn btn-link" onClick={logoutHandler}>Logout</button>

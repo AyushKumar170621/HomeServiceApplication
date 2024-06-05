@@ -1,18 +1,16 @@
 import React, { useState, useEffect, Fragment } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Spinner from "./Loading";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { registerprovider, clearErrors } from "../../action/userAction";
-import "./styles.css";
+import "./register.css";
 
 const RegisterProvider = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const { error, loading, isAuthenticated } = useSelector(
-    (state) => state.user
-  );
+  const { error, loading, isAuthenticated } = useSelector((state) => state.user);
   const [avatar, setAvatar] = useState("/profile.png");
   const [avatarPreview, setAvatarPreview] = useState("/profile.png");
   const [user, setUser] = useState({
@@ -26,9 +24,7 @@ const RegisterProvider = () => {
 
   const registerSubmit = (e) => {
     e.preventDefault();
-
     const myForm = new FormData();
-
     myForm.set("name", user.name);
     myForm.set("email", user.email);
     myForm.set("password", user.password);
@@ -41,14 +37,12 @@ const RegisterProvider = () => {
   const registerDataChange = (e) => {
     if (e.target.name === "avatar") {
       const reader = new FileReader();
-
       reader.onload = () => {
         if (reader.readyState === 2) {
           setAvatarPreview(reader.result);
           setAvatar(reader.result);
         }
       };
-
       reader.readAsDataURL(e.target.files[0]);
     } else {
       setUser({ ...user, [e.target.name]: e.target.value });
@@ -57,13 +51,9 @@ const RegisterProvider = () => {
 
   useEffect(() => {
     if (error) {
-      toast.error(error, {
-        position: toast.POSITION.TOP_CENTER,
-        autoClose: 2000,
-      });
+      toast.error(error, { position: toast.POSITION.TOP_CENTER, autoClose: 2000 });
       dispatch(clearErrors());
     }
-
     if (isAuthenticated) {
       navigate("/services");
     }
@@ -72,89 +62,41 @@ const RegisterProvider = () => {
   return (
     <Fragment>
       <ToastContainer />
-      {loading ? (
-        <Spinner />
-      ) : (
+      {loading ? <Spinner /> : (
         <div className="container-logsign">
           <form className="register-form" onSubmit={registerSubmit}>
-            <h2>Register</h2>
+            <h2>Register as Service Provider</h2>
             <div className="input-group">
               <label htmlFor="name">Name</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                onChange={registerDataChange}
-                required
-              />
+              <input type="text" id="name" name="name" onChange={registerDataChange} required />
             </div>
             <div className="input-group">
               <label htmlFor="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                onChange={registerDataChange}
-                required
-              />
+              <input type="email" id="email" name="email" onChange={registerDataChange} required />
             </div>
             <div className="input-group">
               <label htmlFor="password">Password</label>
-              <input
-                type="password"
-                id="password"
-                name="password"
-                onChange={registerDataChange}
-                required
-              />
+              <input type="password" id="password" name="password" onChange={registerDataChange} required />
             </div>
             <div className="input-group">
               <label htmlFor="avatar">Avatar</label>
-              <input
-                type="file"
-                id="avatar"
-                name="avatar"
-                accept="image/*"
-                onChange={registerDataChange}
-              />
+              <input type="file" id="avatar" name="avatar" accept="image/*" onChange={registerDataChange} />
             </div>
             <div className="input-group">
-              <img
-                src={avatarPreview}
-                alt="Avatar Preview"
-                height={50}
-                width={50}
-              />
+              <img src={avatarPreview} alt="Avatar Preview" height={50} width={50} />
             </div>
             <div className="input-group">
               <label htmlFor="phone">Phone</label>
-              <input
-                type="number"
-                id="phone"
-                name="phone"
-                pattern="[0-9]{10}"
-                onChange={registerDataChange}
-                required
-              />
+              <input type="number" id="phone" name="phone" pattern="[0-9]{10}" onChange={registerDataChange} required />
               <small>Format: 123-456-7890</small>
             </div>
             <div className="input-group">
               <label htmlFor="city">City</label>
-              <input
-                type="text"
-                id="city"
-                name="city"
-                onChange={registerDataChange}
-                required
-              />
+              <input type="text" id="city" name="city" onChange={registerDataChange} required />
             </div>
             <div className="input-group">
-              <select
-                id="category"
-                name="category"
-                onChange={registerDataChange}
-                required
-              >
+              <label htmlFor="category">Category</label>
+              <select id="category" name="category" onChange={registerDataChange} required>
                 <option value="">Select category</option>
                 <option value="Massage">Massage</option>
                 <option value="Electrician">Electrician</option>
@@ -163,21 +105,15 @@ const RegisterProvider = () => {
                 <option value="Chimney Repair">Chimney Repair</option>
                 <option value="Microwave Repair">Microwave Repair</option>
                 <option value="Kitchen cleaning">Kitchen cleaning</option>
-                <option value="Shave/beard grooming">
-                  Shave/beard grooming
-                </option>
+                <option value="Shave/beard grooming">Shave/beard grooming</option>
                 <option value="Face care">Face care</option>
                 <option value="Hair colour">Hair colour</option>
                 <option value="Home painting">Home painting</option>
                 <option value="Bathroom cleaning">Bathroom cleaning</option>
                 <option value="AC Repair Service">AC Repair Service</option>
-                <option value="Water Purifier Repair">
-                  Water Purifier Repair
-                </option>
+                <option value="Water Purifier Repair">Water Purifier Repair</option>
                 <option value="Carpenter">Carpenter</option>
-                <option value="Washing Machine Repair">
-                  Washing Machine Repair
-                </option>
+                <option value="Washing Machine Repair">Washing Machine Repair</option>
                 <option value="Laptop Repair">Laptop Repair</option>
                 <option value="Full home cleaning">Full home cleaning</option>
                 <option value="Refrigerator Repair">Refrigerator Repair</option>
