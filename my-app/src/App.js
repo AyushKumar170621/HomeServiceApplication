@@ -15,7 +15,7 @@ import Payment from './Components/Booking/Payment';
 import LocationInfo from './Components/Booking/LocationInfo';
 import Description from './Components/Description';
 import PaymentSuccessfull from './Components/Booking/PaymentSuccessfull';
-import AddService from './Admin/Addservice';
+import AddService from './Admin/Addservice/Addservice';
 import RegisterProvider from './Components/UserAuth/RegisterProvider';
 import AllServices from './Admin/AllServices';
 import Updatebooking from './Admin/UpdateBooking';
