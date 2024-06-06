@@ -51,7 +51,7 @@ function Header({isProvider}) {
             <nav className="navbar navbar-expand-lg custom_nav-container ">
               <Link className="navbar-brand" to="/">
                 <span>
-                  Inance
+                  Home Service Application
                 </span>
               </Link>
 
@@ -62,43 +62,43 @@ function Header({isProvider}) {
               <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav ">
                   <li className="nav-item active">
-                    <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
+                    <Link className="nav-link" to="/"><i class="bi bi-house"></i> Home <span className="sr-only">(current)</span></Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link" to="/about"> About</Link>
+                    <Link className="nav-link" to="/about"><i class="bi bi-info-square-fill"></i> About</Link>
                   </li>
                   {isProvider && 
                   <>
                   <li className="nav-item">
-                    <Link className="nav-link" to="/provider/booking">Bookings</Link>
+                    <Link className="nav-link" to="/provider/booking"><i class="bi bi-journals"></i> Bookings</Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link" to="/provider/mybooking">My Bookings</Link>
+                    <Link className="nav-link" to="/provider/mybooking"><i class="bi bi-person-lines-fill"></i> My Bookings</Link>
                   </li>
                   </>
                   }
                   {!isProvider &&
                   <>
                   <li className="nav-item">
-                    <Link className="nav-link" to="/services">Services</Link>
+                    <Link className="nav-link" to="/services"><i class="bi bi-wrench-adjustable-circle-fill"></i> Services</Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link" to="/contact">Contact Us</Link>
+                    <Link className="nav-link" to="/contact"><i class="bi bi-person-video2"></i> Contact Us</Link>
                   </li>
                   </>
                   }
                   {!isAuthenticated?<li className="nav-item">
-                    <Link className="nav-link" to="/login">Login</Link>
+                    <Link className="nav-link" to="/login"><i class="bi bi-arrow-return-right"></i> Login</Link>
                   </li>:
                   <li className="nav-item dropdown">
                     <a className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       {user.name}
                     </a>
                     <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <Link className="dropdown-item" to="/profile">Profile</Link>
-                      <Link className="dropdown-item" onClick={logoutHandler}>Logout</Link>
-                      <Link className="dropdown-item" to="/service/recommend">Recomendation</Link>
-                      {!isProvider && <Link className="dropdown-item" to="/bookings">My booking</Link>}
+                      <Link className="dropdown-item" to="/profile"><i class="bi bi-person-badge"></i> Profile</Link>
+                      <Link className="dropdown-item" onClick={logoutHandler}><i class="bi bi-box-arrow-left"></i> Logout</Link>
+                      <Link className="dropdown-item" to="/service/recommend"><i class="bi bi-lightbulb-fill"></i> Recomendation</Link>
+                      {!isProvider && <Link className="dropdown-item" to="/bookings"><i class="bi bi-person-lines-fill"></i> My booking</Link>}
                     </div>
                   </li>
                   }

@@ -65,7 +65,7 @@ const RegisterProvider = () => {
       {loading ? <Spinner /> : (
         <div className="container-logsign">
           <form className="register-form" onSubmit={registerSubmit}>
-            <h2>Register as Service Provider</h2>
+            <h2><i class="bi bi-tools"></i> Register as Service Provider</h2>
             <div className="input-group">
               <label htmlFor="name">Name</label>
               <input type="text" id="name" name="name" onChange={registerDataChange} required />
@@ -120,7 +120,7 @@ const RegisterProvider = () => {
                 <option value="Men/kids haircut">Men/kids haircut</option>
               </select>
             </div>
-            <button type="submit">Register</button>
+            <button type="submit"><i class="bi bi-patch-plus-fill"></i> Register</button>
           </form>
         </div>
       )}

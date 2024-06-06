@@ -45,8 +45,8 @@ const UCard = ({user}) => {
   return (
     <div className="col justify-content-center my-5 ">
     <ToastContainer/>
-    <div className="card">
-        <img src={user.avatar.url} style={{height:'18rem',width: '100%',objectFit: 'contain'}} className="card-img-top" alt={user.name}/>
+    <div className="card m-2">
+        <img src={user.avatar.url} style={{height:'18rem',width: '25rem',objectFit: 'contain'}} className="card-img-top" alt={user.name}/>
       <div className="card-body text-center">
       <form>
         <h5 className="card-title"><b>Name :</b> {user.name}</h5>

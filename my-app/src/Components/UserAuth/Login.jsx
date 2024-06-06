@@ -56,7 +56,7 @@ const Login = () => {
         <Fragment>
           <div className="container-logsign">
             <form className="login-form" onSubmit={handleSubmit}>
-              <h2>Login</h2>
+              <h2><i class="bi bi-person-fill"></i> Login</h2>
               <div className="input-group">
                 <label htmlFor="username">Username</label>
                 <input type="text" id="username" onChange={handleChange} name="username" required />
@@ -65,10 +65,14 @@ const Login = () => {
                 <label htmlFor="password">Password</label>
                 <input type="password" id="password" onChange={handleChange} name="password" required />
               </div>
-              <button type="submit" className="login-button">Login</button>
-              <div className="links">
-                <Link to="/register" className="link">Register</Link>
-                <Link to="/proregister" className="link">Register as Service Provider</Link>
+              <button type="submit" className="login-button"><i class="bi bi-arrow-return-right"></i> Login</button>
+              <div className="links d-block">
+                <div>
+                  <Link to="/register" className="link-offset-2 link-underline link-underline-opacity-25 link-block">Register</Link>
+                </div>
+                <div>
+                  <Link to="/proregister" className="link-offset-2 link-underline link-underline-opacity-50 link-block">Register as Service Provider</Link>
+                </div>
               </div>
               <button type="button" className="forgot-password-btn" onClick={handleForgotPassword}>
                 Forgot Password?

@@ -64,7 +64,7 @@ const Register = () => {
       {loading ? <Spinner /> :
         <div className="container-logsign">
           <form className="register-form" onSubmit={registerSubmit}>
-            <h2>Register</h2>
+            <h2><i class="bi bi-people-fill"></i> Register</h2>
             <div className="input-group">
               <label htmlFor="name">Name</label>
               <input type="text" id="name" name="name" onChange={registerDataChange} required />
@@ -93,7 +93,7 @@ const Register = () => {
               <label htmlFor="city">City</label>
               <input type="text" id="city" name="city" onChange={registerDataChange} required />
             </div>
-            <button type="submit" className="register-button">Register</button>
+            <button type="submit" className="register-button"><i class="bi bi-person-add"></i> Register</button>
           </form>
         </div>}
     </Fragment>

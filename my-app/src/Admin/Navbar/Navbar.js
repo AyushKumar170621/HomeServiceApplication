@@ -20,19 +20,19 @@ const AdminNavbar = () => {
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
           <li className="nav-item">
-            <Link className="nav-link" to="/admin/addservice">Add Service</Link>
+            <Link className="nav-link" to="/admin/addservice"><i class="bi bi-plus-circle"></i> Add Service</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/admin/allservice">All Services</Link>
+            <Link className="nav-link" to="/admin/allservice"><i class="bi bi-tools"></i> All Services</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/admin/booking">Bookings</Link>
+            <Link className="nav-link" to="/admin/booking"><i class="bi bi-database-fill"></i> Bookings</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/admin/users">Users</Link>
+            <Link className="nav-link" to="/admin/users"><i class="bi bi-people-fill"></i> Users</Link>
           </li>
           <li className="nav-item">
-            <button className="nav-link btn btn-link" onClick={logoutHandler}>Logout</button>
+            <button className="nav-link btn btn-link" onClick={logoutHandler}><i class="bi bi-box-arrow-left"></i> Logout</button>
           </li>
         </ul>
       </div>
