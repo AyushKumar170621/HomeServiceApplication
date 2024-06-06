@@ -15,7 +15,7 @@ import Payment from './Components/Booking/Payment';
 import LocationInfo from './Components/Booking/LocationInfo';
 import Description from './Components/Description';
 import PaymentSuccessfull from './Components/Booking/PaymentSuccessfull';
-import AddService from './Admin/Addservice';
+import AddService from './Admin/Addservice/Addservice';
 import RegisterProvider from './Components/UserAuth/RegisterProvider';
 import AllServices from './Admin/AllServices';
 import Updatebooking from './Admin/Updatebooking';
@@ -25,15 +25,17 @@ import AcceptedBookings from './Provider/AcceptedBookings';
 import UserBooking from './Components/UserAuth/Userbooking/UserBooking';
 import AdminProtectedRoute from './Components/Routes/AdminProtectedRoute';
 import ProtectedRoute from './Components/Routes/ProtectedRoute';
-import AdminNavbar from './Admin/Navbar/Navbar'; // Import the AdminNavbar component
+import AdminNavbar from './Admin/Navbar/Navbar';
 import AdminDashboard from './Admin/AdminDashboard';
+import Recommendation from './Components/Recomendation';
 import ProviderProtectedRoute from './Components/Routes/ProviderProtectedRoute';
 import ForgotPassword from './Components/UserAuth/ForgotPassword'
 import ResetPassword from './Components/UserAuth/ResetPassword';
 import Profile from './Components/UserAuth/Profile'
 import PasswordUpdate from './Components/UserAuth/PasswordUpdate';
 import Chatbot from "./Components/ExtraComponent/Chatbot";
-
+import UserList from './Admin/UserList';
+import User from './Admin/U';
 function App() {
   const location = useLocation();
   const isAuthPage = location.pathname === '/login' || location.pathname === '/register';
@@ -47,21 +49,20 @@ function App() {
     }
   }, []);
 
-  // Determine if the header and footer should be displayed
   const showHeaderFooter = !isAuthPage;
-  const isAdmin = user && user.role === 'admin'; // Check if the user is an admin
+  const isAdmin = user && user.role === 'admin';
   const isProvider = user && user.role === "provider";
+
   return (
     <div className="App">
-      {/* Conditionally render AdminNavbar or Header */}
-      {isAdmin ? <AdminNavbar /> : (showHeaderFooter && <Header isProvider = {isProvider}/>)}
+      {isAdmin ? <AdminNavbar /> : (showHeaderFooter && <Header isProvider={isProvider} />)}
 
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/proregister" element={<RegisterProvider />} />
-        <Route  path="/password/forgot" element={<ForgotPassword/>} />
-        <Route path="/password/reset/:token" element={<ResetPassword/>} />
+        <Route path="/password/forgot" element={<ForgotPassword />} />
+        <Route path="/password/reset/:token" element={<ResetPassword />} />
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
@@ -76,27 +77,28 @@ function App() {
           <Route path="/product/locationinfo" element={<LocationInfo />} />
           <Route path="/service/payment" element={<Payment />} />
           <Route path="/service/:id" element={<Description />} />
-          <Route path="/profile" element={<Profile/>}/>
-          <Route path="/profile/update" element={<PasswordUpdate/>}/>
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/profile/update" element={<PasswordUpdate />} />
+          <Route path="/service/recommend" element={<Recommendation/>}/>
         </Route>
 
-        <Route element={<ProviderProtectedRoute/>}>
-          <Route path="/provider/booking" element={<ProviderBooking/>}/>
-          <Route path="/provider/mybooking" element={<AcceptedBookings/>}/>
-          <Route path="/profile" element={<Profile/>}/>
+        <Route element={<ProviderProtectedRoute />}>
+          <Route path="/provider/booking" element={<ProviderBooking />} />
+          <Route path="/provider/mybooking" element={<AcceptedBookings />} />
         </Route>
-        {/* Admin protected routes */}
+
         <Route element={<AdminProtectedRoute user={user} />}>
           <Route path="/admin/addservice" element={<AddService />} />
           <Route path="/admin/allservice" element={<AllServices />} />
           <Route path="/admin/booking" element={<Booking />} />
           <Route path="/admin/booking/:id" element={<Updatebooking />} />
           <Route path="/admin/dashboard" element={<AdminDashboard />} />
-          <Route path="/profile" element={<Profile/>}/>
+          <Route path="/admin/profile" element={<Profile />} />
+          <Route path="/admin/users" element={<UserList />} />
+          <Route path="/admin/user/:id" element={<User/>}/>
         </Route>
       </Routes>
 
-      {/* Conditionally render Footer */}
       {!isAdmin && showHeaderFooter && <Footer />}
     </div>
   );

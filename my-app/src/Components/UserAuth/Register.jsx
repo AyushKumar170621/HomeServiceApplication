@@ -5,7 +5,7 @@ import Spinner from './Loading';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { register, clearErrors } from '../../action/userAction';
-import './styles.css';
+import './register.css';
 
 const Register = () => {
   const dispatch = useDispatch();
@@ -23,9 +23,7 @@ const Register = () => {
 
   const registerSubmit = (e) => {
     e.preventDefault();
-
     const myForm = new FormData();
-
     myForm.set("name", user.name);
     myForm.set("email", user.email);
     myForm.set("password", user.password);
@@ -38,14 +36,12 @@ const Register = () => {
   const registerDataChange = (e) => {
     if (e.target.name === "avatar") {
       const reader = new FileReader();
-
       reader.onload = () => {
         if (reader.readyState === 2) {
           setAvatarPreview(reader.result);
           setAvatar(reader.result);
         }
       };
-
       reader.readAsDataURL(e.target.files[0]);
     } else {
       setUser({ ...user, [e.target.name]: e.target.value });
@@ -54,13 +50,9 @@ const Register = () => {
 
   useEffect(() => {
     if (error) {
-      toast.error(error, {
-        position: toast.POSITION.TOP_CENTER,
-        autoClose: 2000,
-      });
+      toast.error(error, { position: toast.POSITION.TOP_CENTER, autoClose: 2000 });
       dispatch(clearErrors());
     }
-
     if (isAuthenticated) {
       navigate("/services");
     }
@@ -72,7 +64,7 @@ const Register = () => {
       {loading ? <Spinner /> :
         <div className="container-logsign">
           <form className="register-form" onSubmit={registerSubmit}>
-            <h2>Register</h2>
+            <h2><i class="bi bi-people-fill"></i> Register</h2>
             <div className="input-group">
               <label htmlFor="name">Name</label>
               <input type="text" id="name" name="name" onChange={registerDataChange} required />
@@ -101,7 +93,7 @@ const Register = () => {
               <label htmlFor="city">City</label>
               <input type="text" id="city" name="city" onChange={registerDataChange} required />
             </div>
-            <button type="submit">Register</button>
+            <button type="submit" className="register-button"><i class="bi bi-person-add"></i> Register</button>
           </form>
         </div>}
     </Fragment>

@@ -25,12 +25,16 @@ import {
   ADMIN_SERVICE_REQUEST,
   ADMIN_SERVICE_SUCCESS,
   CLEAR_ERRORS,
+  USER_SERVICE_REQUEST,
+  USER_SERVICE_SUCCESS,
+  USER_SERVICE_FAIL,
 } from "../constant/serviceConstants";
 
 export const servicesReducer = (state = { services: [] }, action) => {
   switch (action.type) {
     case ALL_SERVICE_REQUEST:
     case ADMIN_SERVICE_REQUEST:
+    case USER_SERVICE_REQUEST:
       return {
         loading: true,
         services: [],
@@ -45,6 +49,7 @@ export const servicesReducer = (state = { services: [] }, action) => {
       };
 
     case ADMIN_SERVICE_SUCCESS:
+    case USER_SERVICE_SUCCESS:
       return {
         loading: false,
         services: action.payload,
@@ -52,6 +57,7 @@ export const servicesReducer = (state = { services: [] }, action) => {
 
     case ALL_SERVICE_FAIL:
     case ADMIN_SERVICE_FAIL:
+    case USER_SERVICE_FAIL:
       return {
         loading: false,
         error: action.payload,

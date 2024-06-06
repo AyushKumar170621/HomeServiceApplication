@@ -168,6 +168,7 @@ export const updateProfile = (userData) => async (dispatch) => {
 // get All Users
 export const getAllUsers = () => async (dispatch) => {
   try {
+    console.log("hello aditya")
     dispatch({ type: ALL_USERS_REQUEST });
     const { data } = await axios.get(`${baseURL}api/v1/admin/users`);
     dispatch({ type: ALL_USERS_SUCCESS, payload: data.users });
