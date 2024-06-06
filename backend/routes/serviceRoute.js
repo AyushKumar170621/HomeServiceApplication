@@ -1,10 +1,11 @@
 const express = require("express");
-const {createService, getAllServices, getServiceDetails, getAdminService, updateService, deleteService, createServiceReview, getServiceReviews, deleteReview} = require("../controllers/serviceController");
+const {createService, getAllServices, getServiceDetails, getAdminService, updateService, deleteService, createServiceReview, getServiceReviews, deleteReview, getAllUserService} = require("../controllers/serviceController");
 const {authorizedRoles,isAuthenticatedUser} = require("../middleware/auth");
 const router = express.Router();
 
 router.route("/admin/service/new").post(isAuthenticatedUser,authorizedRoles("admin"),createService);
 router.route("/services").get(getAllServices);
+router.route("/userservices").get(isAuthenticatedUser,getAllUserService);
 router.route("/service/:id").get(getServiceDetails);
 router.route("/admin/services").get(isAuthenticatedUser,authorizedRoles("admin"),getAdminService);
 router.route("/review").put(isAuthenticatedUser,createServiceReview);

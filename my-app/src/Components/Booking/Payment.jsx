@@ -25,7 +25,7 @@ const Payment = () => {
     const {
       data: { order },
     } = await axios.post("http://localhost:4000/api/v1/checkout", {
-      amount: serviceItems[0].price, // Use the stored total amount here
+      amount: serviceItems[0].price +  0.18*serviceItems[0].price, // Use the stored total amount here
     });
     const options = {
       key:key,
@@ -37,8 +37,8 @@ const Payment = () => {
       order_id: order.id,
       callback_url: "http://localhost:4000/api/v1/payment/process",
       prefill: {
-        name: "Ayush Kumar",
-        email: "ayush.kumar@example.com",
+        name: "",
+        email: "",
         contact: "5055052",
       },
       notes: {

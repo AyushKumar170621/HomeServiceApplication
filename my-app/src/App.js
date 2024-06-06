@@ -27,6 +27,7 @@ import AdminProtectedRoute from './Components/Routes/AdminProtectedRoute';
 import ProtectedRoute from './Components/Routes/ProtectedRoute';
 import AdminNavbar from './Admin/Navbar/Navbar';
 import AdminDashboard from './Admin/AdminDashboard';
+import Recommendation from './Components/Recomendation';
 import ProviderProtectedRoute from './Components/Routes/ProviderProtectedRoute';
 import ForgotPassword from './Components/UserAuth/ForgotPassword'
 import ResetPassword from './Components/UserAuth/ResetPassword';
@@ -77,6 +78,7 @@ function App() {
           <Route path="/service/:id" element={<Description />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/profile/update" element={<PasswordUpdate />} />
+          <Route path="/service/recommend" element={<Recommendation/>}/>
         </Route>
 
         <Route element={<ProviderProtectedRoute />}>

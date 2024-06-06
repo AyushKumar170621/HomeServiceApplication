@@ -70,6 +70,14 @@ exports.getAllServices = catchAsyncErrors(async (req, res) => {
     });
   });
 
+  //get all service user
+  exports.getAllUserService = catchAsyncErrors(async (req, res, next) => {
+    const services = await Service.find();
+    res.status(200).json({
+      success: true,
+      services,
+    });
+  });
 // Get All Product (Admin)
 exports.getAdminService = catchAsyncErrors(async (req, res, next) => {
   const services = await Service.find();

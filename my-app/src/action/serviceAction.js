@@ -26,6 +26,9 @@ import {
   DELETE_SERVICE_RESET,
   DELETE_SERVICE_SUCCESS,
   CLEAR_ERRORS,
+  USER_SERVICE_REQUEST,
+  USER_SERVICE_SUCCESS,
+  USER_SERVICE_FAIL,
 } from "../constant/serviceConstants";
 import { baseURL } from "./base";
 
@@ -53,6 +56,21 @@ export const getServices = (keyword = "", currentPage = 1, price = [0, 25000], c
     });
   }
 };
+export const getAllUserService = () => async(dispatch) => {
+  try{
+    dispatch({type: USER_SERVICE_REQUEST});
+    const {data} = await axios.get(`${baseURL}api/v1/userservices`);
+    dispatch({
+      type: USER_SERVICE_SUCCESS,
+      payload: data.services
+    })
+  } catch (error) {
+    dispatch({
+      type: USER_SERVICE_FAIL,
+      payload: error.response.data.message,
+    });
+  }
+}
 
 // Get Service Details
 export const getServiceDetails = (id) => async (dispatch) => {
