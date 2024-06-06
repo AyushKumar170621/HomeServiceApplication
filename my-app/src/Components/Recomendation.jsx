@@ -9,7 +9,7 @@ const Recommendation = () => {
     const dispatch = useDispatch();
 
     const { services, loading, error } = useSelector(state => state.services);
-    const { bookErr=error, bookings } = useSelector(state => state.myBooking);
+    const { bookErr, bookings } = useSelector(state => state.myBooking);
 
     useEffect(() => {
         dispatch(getAllUserService());
@@ -19,13 +19,17 @@ const Recommendation = () => {
     const getRecommendations = (bookings) => {
         const recommendedServices = new Set();
         bookings.forEach(booking => {
-            const relatedServices = Object.entries(serviceRecommendations).find(
-                ([key]) => key.toLowerCase() === booking.serviceName.toLowerCase()
-            );
-            if (relatedServices) {
-                relatedServices[1].slice(0, 2).forEach(service => recommendedServices.add(service.toLowerCase()));
+            console.log(booking);
+            if (booking.serviceItems.name) {
+                const relatedServices = Object.entries(serviceRecommendations).find(
+                    ([key]) => key.toLowerCase() === booking.serviceItems.name.toLowerCase()
+                );
+                if (relatedServices) {
+                    relatedServices[1].slice(0, 3).forEach(service => recommendedServices.add(service.toLowerCase()));
+                }
             }
         });
+        console.log(recommendedServices);
         return Array.from(recommendedServices);
     };
 
@@ -40,10 +44,10 @@ const Recommendation = () => {
     const recommendedServices = getRecommendations(bookings);
 
     return (
-        <div className="container">
+        <div className="container m-3">
             <div className="row">
                 {recommendedServices.map(service => {
-                    const serviceData = services.find(s => s.name.toLowerCase() === service);
+                    const serviceData = services.find(s => s.name && s.name.toLowerCase() === service);
                     return serviceData ? <ServiceCard key={serviceData._id} service={serviceData} /> : null;
                 })}
             </div>

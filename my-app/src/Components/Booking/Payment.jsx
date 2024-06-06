@@ -37,7 +37,7 @@ const Payment = () => {
       order_id: order.id,
       callback_url: "http://localhost:4000/api/v1/payment/process",
       prefill: {
-        name: "",
+        name: "Ayush Kumar",
         email: "",
         contact: "5055052",
       },

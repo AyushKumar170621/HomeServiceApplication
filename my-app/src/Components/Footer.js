@@ -48,7 +48,7 @@ function Footer() {
       </div>
       <div className="social-box">
         <h4>Follow Us</h4>
-        <div className="box">
+        <div className="box bg-dark">
           <a href="">
             <i className="fa fa-facebook" aria-hidden="true"></i>
           </a>
