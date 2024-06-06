@@ -6,7 +6,7 @@ import BookingCard from './BookingCard';
 import { updateBooking,clearBookingErrors,getBookingDetails } from '../action/bookingAction';
 import { UPDATE_BOOKING_RESET } from '../constant/bookingConstants';
 import { useParams,useNavigate } from 'react-router-dom'
-const UpdateBooking = () => {
+const Updatebooking = () => {
     const {id} = useParams();
     const { booking, error, loading } = useSelector((state) => state.bookingDetails);
     const { error: updateError, isUpdated } = useSelector((state) => state.booking);
@@ -77,4 +77,4 @@ const UpdateBooking = () => {
   )
 }
 
-export default UpdateBooking
+export default Updatebooking

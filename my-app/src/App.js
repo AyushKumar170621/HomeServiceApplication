@@ -18,7 +18,7 @@ import PaymentSuccessfull from './Components/Booking/PaymentSuccessfull';
 import AddService from './Admin/Addservice';
 import RegisterProvider from './Components/UserAuth/RegisterProvider';
 import AllServices from './Admin/AllServices';
-import Updatebooking from './Admin/UpdateBooking';
+import Updatebooking from './Admin/Updatebooking';
 import Booking from "./Admin/Booking"
 import ProviderBooking from './Provider/ProviderBooking';
 import AcceptedBookings from './Provider/AcceptedBookings';
@@ -66,10 +66,12 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/faq" element={<Chatbot/>}/>
+        <Route path="/services" element={<Service />} />
         {/* Protected routes for authenticated users */}
         <Route path="/paymentSuccessfull" element={<PaymentSuccessfull />} />
+
         <Route element={<ProtectedRoute isAuthenticated={isAuthenticated} />}>
-          <Route path="/services" element={<Service />} />
+          
           <Route path="/bookings" element={<UserBooking />} />
           <Route path="/product/locationinfo" element={<LocationInfo />} />
           <Route path="/service/payment" element={<Payment />} />

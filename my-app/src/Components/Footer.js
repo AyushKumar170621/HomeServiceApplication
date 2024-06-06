@@ -17,7 +17,7 @@ function Footer() {
                       <div className="img-box">
                         <i className="fa fa-map-marker" aria-hidden="true"></i>
                       </div>
-                      <p>Lorem Ipsum is simply dummy text</p>
+                      <p>566/6, Bell road, Clement Town, Dehradun</p>
                     </div>
                   </a>
                 </div>
