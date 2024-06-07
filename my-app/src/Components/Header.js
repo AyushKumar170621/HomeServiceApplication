@@ -34,13 +34,13 @@ function Header({isProvider}) {
               <a href="#">
                 <i className="fa fa-phone" aria-hidden="true"></i>
                 <span>
-                  Call : +01 123455678990
+                  Call : +91 70047 14475
                 </span>
               </a>
               <a href="#">
                 <i className="fa fa-envelope" aria-hidden="true"></i>
                 <span>
-                  Email : demo@gmail.com
+                  Email : ayushk1701@gmail.com
                 </span>
               </a>
             </div>
