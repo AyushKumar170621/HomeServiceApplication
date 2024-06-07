@@ -31,9 +31,12 @@ const ServiceCard = ({ service }) => {
 
     const positiveReviews = service.posCount; 
     const totalReviews = service.numOfReviews; 
-    console.log("the reerer",positiveReviews,totalReviews)
+    console.log("the reerer",positiveReviews,totalReviews);
+    var  percentage=null;
     if(totalReviews>0)
-var  percentage=(positiveReviews/totalReviews)*100;
+    {
+        percentage=(positiveReviews/totalReviews)*100;
+    }
     const showThumbsUp = totalReviews > 0 && (positiveReviews / totalReviews) > 0.5;
 
     return (
@@ -42,7 +45,7 @@ var  percentage=(positiveReviews/totalReviews)*100;
                 {`
                     .icon-container {
                         display: flex;
-                        justify-content: center;
+                        justify-content: start;
                         gap: 10px;
                         margin-top: 10px;
                     }
@@ -69,6 +72,18 @@ var  percentage=(positiveReviews/totalReviews)*100;
                     <div className="detail-box">
                         <h4>{service.name}</h4>
                         <Rating {...options} />
+                        {percentage > 40 && 
+                            <div className="icon-container">
+                                <FontAwesomeIcon icon={faThumbsUp} className="icon thumbs-up" />
+                                  <p>{percentage}%</p>
+                            </div>
+                        }
+                        {service.numOfReviews > 0 && percentage < 40 &&
+                            <div className="icon-container">
+                                <FontAwesomeIcon icon={faThumbsUp} className="icon thumbs-down" />
+                                  <p>{100-percentage}%</p>
+                            </div>
+                        }
                         <h4 className="text-primary">{'₹' + service.price}</h4>
                         <p>{truncatedDescription}</p>
                     </div>
@@ -83,15 +98,7 @@ var  percentage=(positiveReviews/totalReviews)*100;
                                 Book Now
                             </button>
                         </Link>
-                        {showThumbsUp > 0.5 && 
-                            <div className="icon-container">
-                                <FontAwesomeIcon icon={faThumbsUp} className="icon thumbs-up" />
-                                  <p>{percentage}</p>
-                            </div>
-                        }
-                        {
-
-                        }
+                        
                         
                         
                     </div>
