@@ -1,7 +1,8 @@
 import React, { Fragment, useEffect, useState } from 'react';
 import { useSelector, useDispatch } from "react-redux";
 import { clearErrors, getServices } from '../action/serviceAction';
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faThumbsUp, faThumbsDown } from "@fortawesome/free-solid-svg-icons";
 import { Link } from 'react-router-dom';
 import ServiceCard from "../Components/serviceCard"; // Assuming you have a ServiceCard component
 ;
@@ -82,7 +83,9 @@ const Service = () => {
                                 <div className="col-12 text-center wow fadeInUp" data-wow-delay="0.1s">
                                     <Link className="btn btn-primary rounded-pill py-3 px-5" onClick={() => { setCurrentPageNo(currentPage - 1) }}>Prev</Link>
                                     <Link className="btn btn-primary rounded-pill py-3 px-5" onClick={() => { setCurrentPageNo(currentPage + 1) }}>Next</Link>
+                                    
                                 </div>
+                               
                             </div>
                         </div>
                     </div>
